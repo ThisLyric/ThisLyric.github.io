@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Android/Root
+title: Lets Have Some Fun with Rooted Device
 permalink: '/Android/Root'
 ---
 
