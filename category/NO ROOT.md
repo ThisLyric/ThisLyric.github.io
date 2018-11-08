@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Android/NO ROOT
+title: Android/noRoot
 permalink: '/Android/noRoot'
 ---
 
