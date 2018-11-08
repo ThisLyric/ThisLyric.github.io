@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ROOT] Security Patch Sideload 보안 패치 올리는 법"
+title: [ROOT] Security Patch Sideload 보안 패치 올리는 법
 comments: true
 categories : [Android/ROOT]
 tags: [Android]
