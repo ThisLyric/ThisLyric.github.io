@@ -1,7 +1,9 @@
 ---
+layout: post
 title: "[ROOT] Security Patch Sideload 보안 패치 올리는 법"
-date: 2018-11-06 17:26:28 -0400
-categories: root
+comments: true
+categories : [Android/Android]
+tags: [Android]
 ---
 
 기본적으로 adb, fastboot는 컴퓨터에
