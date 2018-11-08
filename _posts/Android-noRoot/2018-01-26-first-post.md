@@ -2,7 +2,7 @@
 layout: post
 title: "First Testing Post"
 comments: true
-categories : [Android/Android]
+categories : [Android/noRoot]
 tags: [Android]
 ---
 
