@@ -2,7 +2,7 @@
 layout: post
 title: "[ROOT] Disable Navigation Bar 네비게이션바 없애는 법"
 comments: true
-categories : [Android/Android]
+categories : [Android/ROOT]
 tags: [Android]
 ---
 
