@@ -11,8 +11,8 @@ feature-img: "assets/img/sample_feature_img_2.png"
 #jb-content{width: 580px;padding: 20px;margin-bottom: 10px;float: right;border: 0px;}
 @media ( min-width: 481px )
 {
-  #jb-sidebar { width: 260px; float: left; }
-  #jb-content { width: 580px; float: right; }
+  #jb-sidebar {/*width: 260px;*/float: left; }
+  #jb-content {/*width: 580px;*/float: right; }
 }
 </style>
 
