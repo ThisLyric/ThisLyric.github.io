@@ -5,29 +5,35 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Nov 2018 15:41:08 -0500</pubDate>
-    <lastBuildDate>Fri, 09 Nov 2018 15:41:08 -0500</lastBuildDate>
+    <pubDate>Fri, 09 Nov 2018 15:48:54 -0500</pubDate>
+    <lastBuildDate>Fri, 09 Nov 2018 15:48:54 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
         <title>Local from GitHub Web</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;p&gt;로컬에서 Real-time으로 확인하기 위해서는&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/thislyric.github.io folder&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jekyll serve --incremental
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;이건 내 편의성&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/thislyric.github.io folder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;서버로 포스팅하기 위해서는&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
 git commit -m &quot;comment&quot;
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/build/github%20blog/2018/11/09/GitHub.html</link>
-        <guid isPermaLink="true">http://localhost:4000/build/github%20blog/2018/11/09/GitHub.html</guid>
+        <link>http://localhost:4000/develop/githubblog/2018/11/09/GitHub.html</link>
+        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/09/GitHub.html</guid>
         
         <category>GitHub Blog</category>
         
         
-        <category>Build/GitHub Blog</category>
+        <category>Develop/GitHubBlog</category>
         
       </item>
     

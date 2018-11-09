@@ -3,8 +3,8 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
-	<title> ThisLyric</title>
-	<meta name="description" content="IT blog">
+	<title>Local from GitHub Web | ThisLyric</title>
+	<meta name="description" content="로컬에서 Real-time으로 확인하기 위해서는">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/blog/page2/">
+	<link rel="canonical" href="/develop/githubblog/2018/11/09/GitHub.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
@@ -150,126 +150,90 @@
 
   <body>
     <div class="content">
-      <div class="home">
-  <div class="selfie">
-  	<a href="https://thislyric.github.io/about">
-  		<img src="https://thislyric.github.io/assets/img/profile.png">
-  	</a>
-  </div>
-
-  
-  <div class="call-out"
-  style="background-image: url('/')">
-    <p>Be the Best</p>
-  </div>
-  
-
-  <!-- Social icons from Font Awesome, if enabled  -->
-  
-<ul class='social'>
-	
-	<li>
-		<a href="/feed.xml" title="Follow RSS feed">
-			<i class="fa fa-fw fa-rss"></i>
-		</a>
-	</li>
-	
-
-	
-	<li>
-		<a href="mailto:ybkim0902@gmail.com" title="Email">
-			<i class="fa fa-fw fa-envelope"></i>
-		</a>
-	</li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	<li>
-		<a href="https://github.com/ThisLyric" title="Follow on GitHub">
-			<i class="fa fa-fw fa-github"></i>
-		</a>
-	</li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-</ul>
-
-
-  <hr>
-  <div class="posts">
-  	<h2 class="post-title">Recent Post</h2>
-
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Local from GitHub Web</h1>
     
-    <div class="post-teaser">
-      <header>
-        <h2>
-          <a class="post-link" href="/android/root/2018/11/07/root1.html">
-            [ROOT] Security Patch Sideload 보안 패치 올리는 법
-          </a>
-        </h2>
-        <p class="meta">
-          November 7, 2018
-        </p>
-        <div class="excerpt">
-          <!--<p>기본적으로 adb, fastboot는 컴퓨터에</p>
+    <p class="meta">
+      November 9, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>로컬에서 Real-time으로 확인하기 위해서는</p>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve --incremental
+</code></pre></div></div>
 
-          <a class="button" href="/android/root/2018/11/07/root1.html">
-            Continue reading
-          </a>-->
-        </div>
-      </header>
-    </div>
-    
+<p>이건 내 편의성</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/thislyric.github.io folder
+</code></pre></div></div>
 
-  </div>
-
+<p>서버로 포스팅하기 위해서는</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "comment"
+git push -u origin master
+</code></pre></div></div>
+</section>
   
-  <div class="pagination">
+<footer>
+  <div class="tags">
     
-    <a href="/" class="button" >
-      <i class="fa fa-chevron-left"></i>
-      Prev
-    </a>
-    
+    <a class="tag" href="/tags#GitHub Blog">#GitHub Blog</a>
     
   </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://thislyric.github.io/develop/githubblog/2018/11/09/GitHub.html#disqus_thread"></a>
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://thislyric-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--
+Add following to the page before </body>
+<script id="dsq-count-scr" src="//thislyric-1.disqus.com/count.js" async></script>
+-->
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/android/noroot/2018/11/08/noroot3.html">
+        [Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드
+      </a>
+  </div>
+  
   
 </div>
+
+
 
     </div>
     

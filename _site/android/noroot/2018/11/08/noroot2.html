@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
+	<title>Immersive Mode [without ROOT] with Edge Gesture | ThisLyric</title>
+	<meta name="description" content="Instruction below still can access NavBar by swiping up from the bottom.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/android/noroot/2018/11/08/noroot2.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+		
+		
+	</script>
+	
+	
+	
+	
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2204304584306848",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">ThisLyric</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/">Home</a></li>
+				<li><a>Build</a>
+					<ul>
+						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
+					</ul>
+				</li>
+				<li><a>Android</a>
+					<ul>
+						<li><a href="/Android/Root">ROOT</a></li>
+						<li><a href="/Android/noRoot">NO ROOT</a></li>
+					</ul>
+				</li>
+				<li><a href="/about/">About</a></li>
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Immersive Mode [without ROOT] with Edge Gesture</h1>
+    
+    <p class="meta">
+      November 8, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p>Instruction below still can access NavBar by swiping up from the bottom.</p>
+
+<p>(Or from certain apps, when swipe down notification bar)</p>
+
+<ol>
+  <li>
+    <p>Enable USB debugging on your phone settings (개발자옵션 활성화 후, 두번째 세션에 있는 USB Debugging 활성화)</p>
+  </li>
+  <li>
+    <p>Download and extract Google-platform-tools.zip (ADB) to your computer</p>
+  </li>
+</ol>
+
+<p>(https://developer.android.com/studio/release/platform-tools.html)</p>
+
+<ol>
+  <li>Launch Command Prompt</li>
+</ol>
+
+<p>(압축해제만 해놓은 상태에서 platform-tools 폴더가 있는 곳으로 directory 설정해주고 명령 입력)</p>
+
+<ol>
+  <li>Execute any of the following commands:</li>
+</ol>
+
+<p>** Hide navigation bar and status bar **</p>
+
+<p>adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox</p>
+
+<p>** Hide only navigation bar **</p>
+
+<p>adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox</p>
+
+<p>** Reverse all **</p>
+
+<p>adb shell settings put global policy_control immersive.full=</p>
+
+<p>To completely get rid of Navigation Bar (Squeeze works)</p>
+
+<p>IMMERSIVE MODE FINAL</p>
+
+<p>** PIXEL 2 **</p>
+
+<p>adb shell wm overscan 0,0,0,-150</p>
+
+<p>** PIXEL 2  XL **</p>
+
+<p>adb shell wm overscan 0,0,0,-170</p>
+
+<h3>Edge Gesture (Recommended Gesture App)</h3>
+
+<center><img src="/assets/img/EdgeGesture.png" width="30%" /></center>
+
+<p>Immersive Mode랑 현재로서는 개인적으로 가장 잘어울린다고 생각하는 제스쳐 앱</p>
+
+<p>(Android P beta 2 사용중인데 switch to previous app은 제스쳐로 안먹히는 상태. 곧 패치 될 것이라고 예상)</p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Android">#Android</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://thislyric.github.io/android/noroot/2018/11/08/noroot2.html#disqus_thread"></a>
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://thislyric-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--
+Add following to the page before </body>
+<script id="dsq-count-scr" src="//thislyric-1.disqus.com/count.js" async></script>
+-->
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/android/noroot/2018/11/07/noroot1.html">
+        First Testing Post
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/android/noroot/2018/11/08/noroot3.html">
+        [Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>
