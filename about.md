@@ -8,8 +8,8 @@ feature-img: "assets/img/sample_feature_img.png"
 <style>
 .text{text-indent: 50px;}
 .text2{text-indent:100px;}
-#jb-sidebar{width: 260px;/*padding: 20px;*/margin-bottom: 10px;float: left;border: 0px;text-align: right;}
-#jb-content{width: 580px;/*padding: 20px;*/margin-bottom: 10px;float: right;border: 0px;}
+#jb-sidebar{width: 260px;padding: 20px;margin-bottom: 10px;float: left;border: 0px;text-align: right;}
+#jb-content{width: 580px;padding: 20px;margin-bottom: 10px;float: right;border: 0px;}
 @media ( min-width: 481px )
 {
   #jb-sidebar {width: 260px;float: left; }
