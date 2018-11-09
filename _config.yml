@@ -12,7 +12,7 @@ theme_settings:
   description: "IT blog" # used by search engines
 
   # Header and footer text
-  header_text: >
+  header_text:
      <p>Be the Best</p>
 
   header_text_feature_image:
