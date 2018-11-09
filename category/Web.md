@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Web Programming
-permalink: '/Develop/Web'
+title: Develop/WebProgramming
+permalink: '/Develop/WebProgramming'
 ---
 
 Another sample category page.

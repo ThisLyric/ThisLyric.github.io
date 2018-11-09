@@ -107,11 +107,15 @@
 						
 					
 						
+					
+						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
 						
 					
 						
@@ -134,7 +138,7 @@
 				<li><a>Build</a>
 					<ul>
 						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
-						<li><a href="/Develop/Web">Web</a></li>
+						<li><a href="/Develop/WebProgramming">Web</a></li>
 					</ul>
 				</li>
 				<li><a>Android</a>
@@ -166,6 +170,17 @@
 
 <script>
   window.store = {
+    
+      "develop-webprogramming-2018-11-09-php1-html": {
+        "title": "PHP 기본",
+        "tags": "WebProgramming",
+        "date": "November 9, 2018",
+        "author": "",
+        "category": "",
+        "content": "아래는 메인 .html 파일 Form을 작성될시 .php로 정보를 보낸다.&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;style&gt;h1{font-family:cursive;}&lt;/style&gt;  &lt;head&gt;    &lt;meta charset = \"utf-8\"&gt;    &lt;title&gt;Welcome to PHP&lt;/title&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;form method=\"post\" action=\"lab1.php\"&gt;    &lt;h1&gt;Please complete this form to submit your feedback&lt;/h1&gt;    &lt;p&gt;    &lt;table border = '0'&gt;      &lt;tbody&gt;        &lt;tr&gt;          &lt;td&gt;Name: &lt;select name=\"prefix\" required&gt;            &lt;option value = \"Dr.\"&gt;Dr.&lt;/option&gt;            &lt;option value = \"Mr.\"&gt;Mr.&lt;/option&gt;            &lt;option value = \"Mrs.\"&gt;Mrs.&lt;/option&gt;            &lt;option value = \"Ms.\"&gt;Ms.&lt;/option&gt;          &lt;/select&gt;          &lt;/td&gt;          &lt;td&gt;            &lt;input name = \"name\" type=\"text\" size=\"25\" maxlength = \"30\" autofocus required&gt;          &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;          &lt;td&gt;Email Address: &lt;/td&gt;          &lt;td&gt;&lt;input name=\"email\" type=\"text\" size=\"25\" maxlength=\"30\" autofocus required&gt;&lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;          &lt;td&gt;Phone Number: &lt;/td&gt;          &lt;td&gt;&lt;input name=\"phone\" type=\"text\" size=\"25\" maxlength=\"30\" autofocus required&gt;&lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;  &lt;/p&gt;    &lt;p&gt;      &lt;strong&gt;Rating...&lt;/strong&gt;        &lt;input name=\"rate\" type=\"radio\" value=\"excellent\"&gt;        excellent        &lt;input name=\"rate\" type=\"radio\" value=\"okay\"&gt;        okay        &lt;input name=\"rate\" type=\"radio\" value=\"boring\"&gt;        boring    &lt;/p&gt;      &lt;p&gt;&lt;label&gt;Comments:        &lt;textarea name=\"comment\" rows=\"5\" cols=\"30\"&gt;        &lt;/textarea&gt;      &lt;/label&gt;&lt;/p&gt;      &lt;input type=\"Submit\" name=\"submit\" value=\"Send My Feedback\"&gt;    &lt;/form&gt;  &lt;/body&gt;&lt;/html&gt;아래는 연동된 PHP FileForm에서 주어진 name을 $_POST[]를 이용해서 불러온다.&lt;?php  if(isset($_POST['submit'])){    $prefix = $_POST['prefix'];    $name = $_POST['name'];    $email = $_POST['email'];    $phone = $_POST['phone'];    $rate = $_POST['rate'];    $comment = $_POST['comment'];    echo \"Thank you, &lt;b&gt;$prefix&lt;/b&gt; &lt;b&gt;$name&lt;/b&gt;, for your comments.\";    echo \"&lt;p&gt;\";    echo \"Your email address is &lt;b&gt;$email&lt;/b&gt; and your phone number is &lt;b&gt;$phone&lt;/b&gt;\";    echo \"&lt;p&gt;\";    echo \"You stated that you found this example to be '&lt;b&gt;$rate&lt;/b&gt;' and added: &lt;b&gt;$comment&lt;/b&gt;\";  }?&gt;",
+        "url": "//develop/webprogramming/2018/11/09/php1.html"
+      }
+      ,
     
       "develop-githubblog-2018-11-09-github-html": {
         "title": "Local from GitHub Web",
