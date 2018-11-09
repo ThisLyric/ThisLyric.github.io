@@ -7,6 +7,7 @@ feature-img: "assets/img/sample_feature_img_2.png"
 
 <style>
 .text{text-indent: 50px;}
+.text2{text-indext:100px;}
 #jb-sidebar{width: 260px;/*padding: 20px;*/margin-bottom: 10px;float: left;border: 0px;text-align: right;}
 #jb-content{width: 580px;/*padding: 20px;*/margin-bottom: 10px;float: right;border: 0px;}
 @media ( min-width: 481px )
@@ -34,20 +35,20 @@ feature-img: "assets/img/sample_feature_img_2.png"
 
 <br>
 <h3>2. Interest</h3>
-   <p class="text"> Android Programming </p>
+   <p class="text"> * Android Programming </p>
 
 <br>
 
 <h3>3. Experience</h3>
-
+<p class="text">2016.8 ~ Present</p>
+<p class="text2">Montclair State University IT Service Desk</p>
+/*
 <div id="jb-sidebar">
 	<p>2016.9 ~ Present</p>
 </div>
-
 <div id="jb-content">
     <p>Montclair State University IT Service Desk</p>
 </div>
-
-<br><br><br><br><br>
-
+*/
+<br>
 <h3>4. Project</h3>
