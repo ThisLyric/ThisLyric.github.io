@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Yong Bum Kim
 permalink: /about/
 feature-img: "assets/img/sample_feature_img.png"
 ---
