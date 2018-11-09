@@ -3,8 +3,8 @@
   <head>
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
-	<title>tags | ThisLyric</title>
-	<meta name="description" content="IT blog">
+	<title>[Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드 | ThisLyric</title>
+	<meta name="description" content="기본적으로 adb, fastboot는 컴퓨터에">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -14,7 +14,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/tags.html">
+	<link rel="canonical" href="/android/noroot/2018/11/08/noroot3.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
@@ -139,87 +139,115 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">tags</h1>
+    <h1 class="title">[Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드</h1>
+    
+    <p class="meta">
+      November 8, 2018
       
+    </p>
   </header>
-  <section class="post-content">
+  <section class="post-content"><p>기본적으로 adb, fastboot는 컴퓨터에</p>
 
+<p>twrp.zip, magisk.zip은 핸드폰 안에 들어가 있는 전제</p>
 
-<!-- cycles through tag list and creates subheader for each tag name -->
+<p>밑의 링크 들어가서 올리고싶은 버전으로 올리기.</p>
 
-  
-    
-    <h2 id="Android" class="tag-title">
-      #Android
-    </h2>
-    <!-- lists all posts corresponding to specific tag -->
-    
-      
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="/android/noroot/2018/11/08/noroot3.html">
-              [Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드
-            </a><small>
-              November 8, 2018
-            </small>
-          </h3>
-        </div>
-      
-    
-      
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="/android/noroot/2018/11/08/noroot2.html">
-              Immersive Mode [without ROOT] with Edge Gesture
-            </a><small>
-              November 8, 2018
-            </small>
-          </h3>
-        </div>
-      
-    
-      
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="/android/noroot/2018/11/07/noroot1.html">
-              First Testing Post
-            </a><small>
-              November 7, 2018
-            </small>
-          </h3>
-        </div>
-      
-    
-      
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="/android/root/2018/11/07/root2.html">
-              [ROOT] Disable Navigation Bar 네비게이션바 없애는 법
-            </a><small>
-              November 7, 2018
-            </small>
-          </h3>
-        </div>
-      
-    
-      
-        <div class="tagged-post">
-          <h3 class="title">
-            <a href="/android/root/2018/11/07/root1.html">
-              [ROOT] Security Patch Sideload 보안 패치 올리는 법
-            </a><small>
-              November 7, 2018
-            </small>
-          </h3>
-        </div>
-      
-    
-  
+<p>OTA file 다운로드</p>
 
-  
+<p>TWRP 같은 버전 img파일 받아서 platform-tools 폴더 안에 넣어놓기</p>
 
+<p>(편하게 OTA 파일은 update.zip</p>
+
+<p>TWRP 이미지 파일은 twrp.img로</p>
+
+<p>바꾸고 실행)</p>
+
+<p>(MAC은 커맨드 앞에 항상 ./)</p>
+
+<p>adb reboot recovery</p>
+
+<p>패턴 걸려있으면 풀어주고</p>
+
+<p>Advanced -&gt; ADB Sideload</p>
+
+<p>Swipe to Start Sideload</p>
+
+<p>adb sideload update.zip</p>
+
+<p>Sideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.</p>
+
+<p>다시 한번 adb reboot recovery로 부팅하면 기본 리커버리가 실행되므로</p>
+
+<p>adb reboot bootloader</p>
+
+<p>fastboot boot twrp.img</p>
+
+<p>twrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zip</p>
+
+<p>flash해주면 다시 재루팅 완료</p>
+
+<p>출처: http://yk364.tistory.com/category [Developer]</p>
 </section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#Android">#Android</a>
+    
+  </div>
+</footer>
+
+
 </article>
+<!-- Disqus -->
+<a href="https://thislyric.github.io/android/noroot/2018/11/08/noroot3.html#disqus_thread"></a>
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://thislyric-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--
+Add following to the page before </body>
+<script id="dsq-count-scr" src="//thislyric-1.disqus.com/count.js" async></script>
+-->
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/android/noroot/2018/11/08/noroot2.html">
+        Immersive Mode [without ROOT] with Edge Gesture
+      </a>
+  </div>
+  
+  
+</div>
+
+
 
     </div>
     
