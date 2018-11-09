@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
 	<title>Search | ThisLyric</title>
-	<meta name="description" content="IT blog">
+	<meta name="description" content="Computer Science">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -107,8 +107,6 @@
 						
 					
 						
-					
-						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
@@ -171,6 +169,17 @@
 <script>
   window.store = {
     
+      "develop-webprogramming-2018-11-09-php2-html": {
+        "title": "PHP 데이터베이스 연동",
+        "tags": "WebProgramming",
+        "date": "November 9, 2018",
+        "author": "",
+        "category": "",
+        "content": "form이 들어간 html이고데이터에서 어떤 데이터를 끌어올지 결정&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    h1 {      font-family: fantasy;    }    label {      font-family: monospace;    }    form {      width: 450px;      margin: auto;      padding-bottom: 20px;      border: 2px solid red;      text-align: center;    }    input {      width: 25%;    }    option {      text-align: center;    }  &lt;/style&gt;  &lt;head&gt;    &lt;title&gt;Main Gate of Database&lt;/title&gt;    &lt;meta charset=\"utf-8\"&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;form action = \"database.php\" method=\"post\"&gt;      &lt;h1&gt;Querying a MySQL database.&lt;/h1&gt;      &lt;label&gt;Select a field to display:        &lt;select name = \"view\" required&gt;          &lt;option value=\"\" disabled selected&gt;--Select your Option--&lt;/option&gt;          &lt;option value=\"all\"&gt;*&lt;/option&gt;          &lt;option value=\"id\"&gt;ID&lt;/option&gt;          &lt;option value=\"title\"&gt;Title&lt;/option&gt;          &lt;option value=\"category\"&gt;Category&lt;/option&gt;          &lt;option value=\"isbn\"&gt;ISBN&lt;/option&gt;        &lt;/select&gt;      &lt;/label&gt;      &lt;br&gt;&lt;br&gt;      &lt;input type=\"submit\" name=\"submit\" value=\"Send Query\"&gt;    &lt;/form&gt;  &lt;/body&gt;&lt;/html&gt;php파일로 html메인페이지에서 받았을떄 알고리즘 적용카테고리 선택시 선택사항만 output&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    div.top {      position: absolute;      align-items: center;      left: 30%;    }    div.bot {      position: relative;      top: 300px;    }    table {      margin: auto;      /*position:relative;      top:100px;*/      border: 2px solid red;      color:yellow;      border-color:blue;      font-family: fantasy;      text-align: center;    }    body {      background-color: black;      color: white;      position: relative;    }  &lt;/style&gt;  &lt;?php    $dsn=\"mysql:host=localhost;dbname=books\";    $username=\"iw3htp\";    $password=\"password\";    $id=$_POST['view'];    $cnt=0;    try {      $conn=new PDO($dsn,$username,$password);      $conn-&gt;setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);      $getAll=$conn-&gt;prepare(\"SELECT * FROM books\");      $getAll-&gt;execute();    }catch(PDOException $e) {      echo \"Error: \".$e-&gt;getMessage();    }    $connect=null;  ?&gt;  &lt;head&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;title&gt;Selected contents&lt;/title&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;?php      $getAll=$conn-&gt;prepare(\"SELECT * FROM books ORDER BY id ASC\");      $getAll-&gt;execute();     ?&gt;     &lt;div class=\"top\"&gt;    &lt;table border = 1&gt;      &lt;?php        switch($id) {          case 'all':            for ($i=0; $view=$getAll-&gt;fetch(); $i++) {              $cnt=$i+1;?&gt;       &lt;tr&gt;         &lt;td&gt;&lt;?php echo $view['id']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['title']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['category']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['isbn']?&gt;&lt;/td&gt;       &lt;/tr&gt;      &lt;?php }        break;        case 'id':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['id']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'title':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['title']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'category':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['category']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'isbn':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['isbn']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;      }//end of switch      ?&gt;&lt;/div&gt;      &lt;div class=\"bot\"&gt;      &lt;?php        echo \"Your search yielded \".$cnt.\" results.\";        echo \"&lt;p&gt;&lt;/p&gt;\";        echo \"Thank you for using our database.\"; ?&gt;    &lt;/div&gt;      &lt;/table&gt;  &lt;/body&gt;&lt;/html&gt;데이터베이스 코드-- phpMyAdmin SQL Dump-- version 4.8.3-- https://www.phpmyadmin.net/---- Host: 127.0.0.1-- Generation Time: Oct 29, 2018 at 10:59 PM-- Server version: 10.1.36-MariaDB-- PHP Version: 7.2.11SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";SET AUTOCOMMIT=0;START TRANSACTION;SET time_zone=\"+00:00\";DROP DATABASE IF EXISTS books;CREATE DATABASE books;USE books;CREATE TABLE `books` (  `id` int(11) NOT NULL,  `title` text NOT NULL,  `category` text NOT NULL,  `isbn` int(11) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;---- Dumping data for table `books`--INSERT INTO `books` (`id`,`title`,`category`,`isbn`) VALUES(1, 'Visual Basic 2010 How to Program', 'Programming', 132152134),(2, 'Visual C# 2010 How to Program', 'Programming', 132151421),(3, 'Java How to Program', 'Programming', 132575663),(4, 'C++ How to Program', 'Programming', 132662361),(5, 'C How to Program', 'Programming', 136123562),(6, 'Internet &amp; World Wide Web How to Program', 'Programming', 132151006),(7, 'Yong Bum Kim Operating Systems', 'Operating Systems', 131828274);COMMIT;drop user iw3htp@localhost;flush privileges;CREATE USERiw3htp@localhostIDENTIFIED BY 'password';GRANT ALLON books.*TO iw3htp@localhostIDENTIFIED BY 'password';최초로 phpmyadmin에서 import할때는 drop user 불필요",
+        "url": "//develop/webprogramming/2018/11/09/php2.html"
+      }
+      ,
+    
       "develop-webprogramming-2018-11-09-php1-html": {
         "title": "PHP 기본",
         "tags": "WebProgramming",
@@ -183,12 +192,12 @@
       ,
     
       "develop-githubblog-2018-11-09-github-html": {
-        "title": "Local from GitHub Web",
+        "title": "From local to GitHub Web",
         "tags": "GitHub Blog",
         "date": "November 9, 2018",
         "author": "",
         "category": "",
-        "content": "이건 내 편의성cd ~/thislyric.github.io로컬에서 Real-time으로 확인하기 위해서는jekyll serve --incremental서버로 포스팅하기 위해서는git add .git commit -m \"comment\"git push -u origin master",
+        "content": "To follow up with your build in a real-timeYour site can be accessed from local:4000 as defaultjekyll serve --incrementalTo post/overwrite to the GitHub Servergit add .git commit -m \"comment\"git push -u origin master",
         "url": "//develop/githubblog/2018/11/09/GitHub.html"
       }
       ,

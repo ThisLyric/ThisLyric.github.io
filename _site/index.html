@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
 	<title> ThisLyric</title>
-	<meta name="description" content="IT blog">
+	<meta name="description" content="Computer Science">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -83,8 +83,6 @@
 					</form>
 					</li>
 
-					
-						
 					
 						
 					
@@ -242,6 +240,146 @@
     <div class="post-teaser">
       <header>
         <h2>
+          <a class="post-link" href="/develop/webprogramming/2018/11/09/php2.html">
+            PHP 데이터베이스 연동
+          </a>
+        </h2>
+        <p class="meta">
+          November 9, 2018
+        </p>
+        <div class="excerpt">
+          <!--<p>form이 들어간 html이고
+데이터에서 어떤 데이터를 끌어올지 결정</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="nb">fantasy</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">label</span> <span class="p">{</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="nb">monospace</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">form</span> <span class="p">{</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">450px</span><span class="p">;</span>
+      <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+      <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="no">red</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">input</span> <span class="p">{</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">25%</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">option</span> <span class="p">{</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Main Gate of Database<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action = </span><span class="s">"database.php"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1&gt;</span>Querying a MySQL database.<span class="nt">&lt;/h1&gt;</span>
+      <span class="nt">&lt;label&gt;</span>Select a field to display:
+        <span class="nt">&lt;select</span> <span class="na">name = </span><span class="s">"view"</span> <span class="na">required</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">""</span> <span class="na">disabled</span> <span class="na">selected</span><span class="nt">&gt;</span>--Select your Option--<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"all"</span><span class="nt">&gt;</span>*<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"id"</span><span class="nt">&gt;</span>ID<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"title"</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"category"</span><span class="nt">&gt;</span>Category<span class="nt">&lt;/option&gt;</span>
+          <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"isbn"</span><span class="nt">&gt;</span>ISBN<span class="nt">&lt;/option&gt;</span>
+        <span class="nt">&lt;/select&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;br&gt;&lt;br&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Send Query"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p>php파일로 html메인페이지에서 받았을떄 알고리즘 적용
+카테고리 선택시 선택사항만 output
+```
+&lt;!DOCTYPE html&gt;</p>
+<html>
+  <style>
+    div.top {
+      position: absolute;
+      align-items: center;
+      left: 30%;
+    }
+    div.bot {
+      position: relative;
+      top: 300px;
+    }
+    table {
+      margin: auto;
+      /*position:relative;
+      top:100px;*/
+      border: 2px solid red;
+      color:yellow;
+      border-color:blue;
+      font-family: fantasy;
+      text-align: center;
+    }
+    body {
+      background-color: black;
+      color: white;
+      position: relative;
+    }
+  </style>
+  <?php
+    $dsn="mysql:host=localhost;dbname=books";
+    $username="iw3htp";
+    $password="password";
+    $id=$_POST['view'];
+    $cnt=0;
+    try {
+      $conn=new PDO($dsn,$username,$password);
+      $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+      $getAll=$conn->prepare("SELECT * FROM books");
+      $getAll->execute();
+    }catch(PDOException $e) {
+      echo "Error: ".$e->getMessage();
+    }
+    $connect=null;
+  ?>
+  <head>
+    <meta charset="utf-8" />
+    <title>Selected contents</title>
+  </head>
+  <body>
+    <?php
+      $getAll=$conn->prepare("SELECT * FROM books ORDER BY id ASC");
+      $getAll->execute();
+     ?>
+     <div class="top">
+    &lt;table border = 1&gt;
+      <?php
+        switch($id) {
+          case 'all':
+            for ($i=0; $view=$getAll->fetch(); $i++) {
+              $cnt=$i+1;?>
+       <tr>
+         <td><?php echo $view['id']?></td>
+         <td><?php echo $view['title']?></td>
+         <td><?php echo $view['category']?></td>
+         <td><?php echo $view['isbn']?></td>
+       </tr>
+      &lt;?php }
+        break;
+
+</div></body></html>
+
+          <a class="button" href="/develop/webprogramming/2018/11/09/php2.html">
+            Continue reading
+          </a>-->
+        </div>
+      </header>
+    </div>
+    
+    <div class="post-teaser">
+      <header>
+        <h2>
           <a class="post-link" href="/develop/webprogramming/2018/11/09/php1.html">
             PHP 기본
           </a>
@@ -275,15 +413,16 @@ h1{font-family:cursive;}
       <header>
         <h2>
           <a class="post-link" href="/develop/githubblog/2018/11/09/GitHub.html">
-            Local from GitHub Web
+            From local to GitHub Web
           </a>
         </h2>
         <p class="meta">
           November 9, 2018
         </p>
         <div class="excerpt">
-          <!--<p>이건 내 편의성</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/thislyric.github.io
+          <!--<p>To follow up with your build in a real-time
+Your site can be accessed from local:4000 as default</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll serve --incremental
 </code></pre></div></div>
 
 
@@ -330,34 +469,6 @@ h1{font-family:cursive;}
 
 
           <a class="button" href="/android/noroot/2018/11/08/noroot2.html">
-            Continue reading
-          </a>-->
-        </div>
-      </header>
-    </div>
-    
-    <div class="post-teaser">
-      <header>
-        <h2>
-          <a class="post-link" href="/android/noroot/2018/11/07/noroot1.html">
-            First Testing Post
-          </a>
-        </h2>
-        <p class="meta">
-          November 7, 2018
-        </p>
-        <div class="excerpt">
-          <!--<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-2204304584306848",
-          enable_page_level_ads: true
-     });
-</script>
-
-
-          <a class="button" href="/android/noroot/2018/11/07/noroot1.html">
             Continue reading
           </a>-->
         </div>

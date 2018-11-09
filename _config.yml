@@ -9,7 +9,7 @@ theme_settings:
   avatar: assets/img/blogmark.png
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
-  description: "IT blog" # used by search engines
+  description: "Computer Science" # used by search engines
 
   # Header and footer text
   header_text:
