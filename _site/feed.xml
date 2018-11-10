@@ -5,13 +5,29 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Nov 2018 15:09:29 -0500</pubDate>
-    <lastBuildDate>Sat, 10 Nov 2018 15:09:29 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Nov 2018 15:36:26 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Nov 2018 15:36:26 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Split view like Windows or Linux - Spectacle</title>
-        <description>&lt;p&gt;Hello world&lt;/p&gt;
+        <description>&lt;p&gt;Windows and Linux have split view shortcut commands available.&lt;br /&gt;&lt;/p&gt;
+&lt;h3&gt;WHY NOT ON MAC?&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.spectacleapp.com/&quot;&gt;Click Here to Install Spectacle&lt;/a&gt;&lt;br /&gt;
+&lt;img width=&quot;88&quot; alt=&quot;screen shot 2018-11-10 at 12 07 54 am&quot; src=&quot;https://user-images.githubusercontent.com/43384877/48305651-b7b84b00-e4fc-11e8-8f6f-5274fec67f95.png&quot; /&gt;
+&lt;br /&gt;
+Once you go through simple downloading an app.&lt;br /&gt;
+Directly extract it to Application folder or extract and move to the folder.
+&lt;br /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;subtitle&gt;Customizable Commands&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img width=&quot;613&quot; alt=&quot;screen shot 2018-11-10 at 12 08 24 am&quot; src=&quot;https://user-images.githubusercontent.com/43384877/48305665-f9e18c80-e4fc-11e8-9a92-eff4da1074db.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Nov 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/life/mac/2018/11/10/Spectacle.html</link>
@@ -166,11 +182,24 @@ ps. If using a code highlighter (Applied from Blog Theme), any languages can be 
   &lt;li&gt;inLine URL&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [Google](https://www.google.com)&amp;lt;br&amp;gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [Google](https://www.google.com)
+ &amp;lt;br&amp;gt;
  [Facebook](https://www.facebook.com)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;br /&gt;
- &lt;a href=&quot;https://www.facebook.com&quot;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
+ &lt;a href=&quot;https://www.facebook.com&quot;&gt;Facebook&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
+Also can assign variables to add hyperlink&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Google][google]
+&amp;lt;br&amp;gt;
+[Facebook][facebook]
+
+[google]: https://www.google.com
+[facebook]: https://www.facebook.com
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.google.com&quot;&gt;Google&lt;/a&gt;
+&lt;br /&gt;
+&lt;a href=&quot;https://www.facebook.com&quot;&gt;Facebook&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
@@ -907,10 +936,8 @@ git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;twrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zip&lt;/p&gt;
 
-&lt;p&gt;flash해주면 다시 재루팅 완료&lt;/p&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
+&lt;p&gt;flash해주면 다시 재루팅 완료
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/life/root/2018/11/07/root1.html</link>
