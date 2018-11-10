@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Nov 2018 01:15:30 -0500</pubDate>
-    <lastBuildDate>Sat, 10 Nov 2018 01:15:30 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Nov 2018 01:23:39 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Nov 2018 01:23:39 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
     
       <item>
@@ -200,10 +200,10 @@ __double underscores__
   &lt;subtitle&gt;9. Image&lt;/subtitle&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Image name](url)
-![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
+&lt;p&gt;&lt;br /&gt;
+&lt;b&gt;Image Name&lt;/b&gt; appears when image is not visible&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![Image Name](url)
+![Image Name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; alt=&quot;Image name&quot; /&gt;&lt;/p&gt;
 
