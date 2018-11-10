@@ -5,9 +5,348 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Nov 2018 18:28:12 -0500</pubDate>
-    <lastBuildDate>Fri, 09 Nov 2018 18:28:12 -0500</lastBuildDate>
+    <pubDate>Sat, 10 Nov 2018 00:35:14 -0500</pubDate>
+    <lastBuildDate>Sat, 10 Nov 2018 00:35:14 -0500</lastBuildDate>
     <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>Split view like Windows or Linux - Spectacle</title>
+        <description>&lt;p&gt;Hello world&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Nov 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/life/mac/2018/11/10/Spectacle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/mac/2018/11/10/Spectacle.html</guid>
+        
+        <category>Application</category>
+        
+        
+        <category>Life/Mac</category>
+        
+      </item>
+    
+      <item>
+        <title>MarkDown Grammars</title>
+        <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;1. 헤더(Header)&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+헤더 크기는 1~6까지 지원한다.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# This is H1        
+## This is H2
+### This is H3
+#### This is H4
+##### This is H5
+###### This is H6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;this-is-h1&quot;&gt;This is H1&lt;/h1&gt;
+&lt;h2 id=&quot;this-is-h2&quot;&gt;This is H2&lt;/h2&gt;
+&lt;h3 id=&quot;this-is-h3&quot;&gt;This is H3&lt;/h3&gt;
+&lt;h4 id=&quot;this-is-h4&quot;&gt;This is H4&lt;/h4&gt;
+&lt;h5 id=&quot;this-is-h5&quot;&gt;This is H5&lt;/h5&gt;
+&lt;h6 id=&quot;this-is-h6&quot;&gt;This is H6&lt;/h6&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;2. 인용구&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+인용구는 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt; 안녕
+&amp;gt; &amp;gt; 안녕
+&amp;gt; &amp;gt; * 안녕
+&amp;gt; &amp;gt; &amp;gt; * 안녕
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;안녕&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;안녕&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;안녕
+        &lt;blockquote&gt;
+          &lt;ul&gt;
+            &lt;li&gt;안녕&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/blockquote&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;3. 목록&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;순서가 있는 목록&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  1. 일번
+  2. 이번
+  3. 삼번
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ol&gt;
+  &lt;li&gt;일번&lt;/li&gt;
+  &lt;li&gt;이번&lt;/li&gt;
+  &lt;li&gt;삼번&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;순서가 없는 목록&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* 일번
+  * 이번
+    * 삼번
++ 일번
+  + 이번
+    + 삼번
+- 일번
+  - 이번
+    - 삼번
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;일번
+    &lt;ul&gt;
+      &lt;li&gt;이번
+        &lt;ul&gt;
+          &lt;li&gt;삼번&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;4. 코드&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&amp;lt; pre &amp;gt; &amp;lt; code &amp;gt; 에 감싸서 사용한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;code&amp;gt;Github&amp;lt;/code&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code&gt;Github&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;
+  for i in range(1,2):
+    print(i)
+  &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code&gt;for i in range(1,2):
+  print(i)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마) js 대신에 원하는 언어를 넣을 수 있다. &lt;a href=&quot;http://rouge.jneen.net/&quot;&gt;Rouge&lt;/a&gt; 하이라이터가 적용 되었다. &lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png&quot; width=&quot;30%&quot; /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 5. 수평선 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;------
+************
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt; 6. 링크 &lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;인라인 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; [Google](http://google.com)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;Google&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;자동 연결 링크&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;http://google.com&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://google.com&quot;&gt;http://google.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;8. 강조&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;single underscores&lt;/em&gt;&lt;br /&gt;
+&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;br /&gt;
+&lt;strong&gt;double underscores&lt;/strong&gt;&lt;br /&gt;
+&lt;del&gt;cancelline&lt;/del&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;9. 이미지&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.
+![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; alt=&quot;Image name&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;
+  ps. 사이즈 조정&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;img src=&quot;이미지 url&quot; width=&quot;원하는 크기&quot;&amp;gt;
+&amp;lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png&quot; width=&quot;60%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;10. 표 그리기&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;표 generate 사이트 : https://www.tablesgenerator.com/markdown_tables&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+      &lt;td&gt;Content Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;내용 정렬은 아래와 같이 한다.&lt;br /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Header  | Second Header | Third Header
+:------------ | :-----------: | -----------:
+Left          | Center        | Right
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;First Header&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Second Header&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Third Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Left&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Center&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;Right&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;subtitle&gt;11. 수식(테마에서 지원)&lt;/subtitle&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;script type=&quot;math/tex&quot;&gt;f(x) = \int \frac{2x^2+4x+6}{x-2}&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 10 Nov 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/develop/githubblog/2018/11/10/GitHub2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/10/GitHub2.html</guid>
+        
+        <category>GitHub Blog</category>
+        
+        
+        <category>Develop/GitHubBlog</category>
+        
+      </item>
     
       <item>
         <title>PHP 데이터베이스 연동</title>
@@ -348,10 +687,15 @@ Your site can be accessed from local:4000 as default&lt;/p&gt;
 git commit -m &quot;comment&quot;
 git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If push command is not working, try to force push
+(This occurs when the remote contains work that you do not have locally)&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master --force
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/githubblog/2018/11/09/GitHub.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/09/GitHub.html</guid>
+        <link>http://localhost:4000/develop/githubblog/2018/11/09/GitHub1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/09/GitHub1.html</guid>
         
         <category>GitHub Blog</category>
         
@@ -405,13 +749,13 @@ git push -u origin master
 &lt;p&gt;출처: http://yk364.tistory.com/category [Developer]&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/android/noroot/2018/11/08/noroot3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/android/noroot/2018/11/08/noroot3.html</guid>
+        <link>http://localhost:4000/life/noroot/2018/11/08/noroot3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/08/noroot3.html</guid>
         
         <category>Android</category>
         
         
-        <category>Android/noRoot</category>
+        <category>Life/noRoot</category>
         
       </item>
     
@@ -475,13 +819,13 @@ git push -u origin master
 &lt;p&gt;(Android P beta 2 사용중인데 switch to previous app은 제스쳐로 안먹히는 상태. 곧 패치 될 것이라고 예상)&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/android/noroot/2018/11/08/noroot2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/android/noroot/2018/11/08/noroot2.html</guid>
+        <link>http://localhost:4000/life/noroot/2018/11/08/noroot2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/08/noroot2.html</guid>
         
         <category>Android</category>
         
         
-        <category>Android/noRoot</category>
+        <category>Life/noRoot</category>
         
       </item>
     
@@ -515,13 +859,13 @@ git push -u origin master
 
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/android/noroot/2018/11/07/noroot1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/android/noroot/2018/11/07/noroot1.html</guid>
+        <link>http://localhost:4000/life/noroot/2018/11/07/noroot1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/07/noroot1.html</guid>
         
         <category>Android</category>
         
         
-        <category>Android/noRoot</category>
+        <category>Life/noRoot</category>
         
       </item>
     
@@ -539,13 +883,13 @@ git push -u origin master
 
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/android/root/2018/11/07/root2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/android/root/2018/11/07/root2.html</guid>
+        <link>http://localhost:4000/life/root/2018/11/07/root2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/root/2018/11/07/root2.html</guid>
         
         <category>Android</category>
         
         
-        <category>Android/Root</category>
+        <category>Life/Root</category>
         
       </item>
     
@@ -598,13 +942,13 @@ git push -u origin master
 
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/android/root/2018/11/07/root1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/android/root/2018/11/07/root1.html</guid>
+        <link>http://localhost:4000/life/root/2018/11/07/root1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/root/2018/11/07/root1.html</guid>
         
         <category>Android</category>
         
         
-        <category>Android/Root</category>
+        <category>Life/Root</category>
         
       </item>
     

@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Life/noRoot
-permalink: '/Life/noRoot'
+title: Life/Mac
+permalink: '/Life/Mac'
 ---
 
 Another sample category page.

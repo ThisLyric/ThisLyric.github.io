@@ -1,7 +1,7 @@
 ---
 layout: category
-title: Android/Root
-permalink: '/Android/Root'
+title: Life/Root
+permalink: '/Life/Root'
 ---
 
 Another sample category page.

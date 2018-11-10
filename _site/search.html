@@ -107,11 +107,15 @@
 						
 					
 						
+					
+						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
 						
 					
 						
@@ -133,16 +137,17 @@
 	<div class="site-category">
 			<ul class='cat1'>
 				<li><a href="/about/">About</a></li>
-				<li><a>Android</a>
-					<ul>
-						<li><a href="/Android/Root">ROOT</a></li>
-						<li><a href="/Android/noRoot">NO ROOT</a></li>
-					</ul>
-				</li>
-				<li><a>Build</a>
+				<li><a>Development</a>
 					<ul>
 						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
 						<li><a href="/Develop/WebProgramming">Web</a></li>
+					</ul>
+				</li>
+				<li><a>Life</a>
+					<ul>
+						<li><a href="/Life/Root">AndroidRoot</a></li>
+						<li><a href="/Life/noRoot">AndroidNoRoot</a></li>
+						<li><a href="/Life/Mac">Mac</a></li>
 					</ul>
 				</li>
 			</ul>
@@ -167,6 +172,28 @@
 
 <script>
   window.store = {
+    
+      "life-mac-2018-11-10-spectacle-html": {
+        "title": "Split view like Windows or Linux - Spectacle",
+        "tags": "Application",
+        "date": "November 10, 2018",
+        "author": "",
+        "category": "",
+        "content": "Hello world",
+        "url": "//life/mac/2018/11/10/Spectacle.html"
+      }
+      ,
+    
+      "develop-githubblog-2018-11-10-github2-html": {
+        "title": "MarkDown Grammars",
+        "tags": "GitHub Blog",
+        "date": "November 10, 2018",
+        "author": "",
+        "category": "",
+        "content": "이번 포스팅은 github 블로그 내용을 원활하게 작성하기 위해서 마크다운(markdown) 문법을 정리해 두려고 작성하였다.  1. 헤더(Header)헤더 크기는 1~6까지 지원한다.# This is H1        ## This is H2### This is H3#### This is H4##### This is H5###### This is H6This is H1This is H2This is H3This is H4This is H5This is H6  2. 인용구인용구는 &gt;를 이용한다. 인용구 안에서 다른 마크업 요소를 섞어서 사용할 수 있다.&gt; 안녕&gt; &gt; 안녕&gt; &gt; * 안녕&gt; &gt; &gt; * 안녕  안녕      안녕          안녕                              안녕                                3. 목록  순서가 있는 목록  1. 일번  2. 이번  3. 삼번  일번  이번  삼번  순서가 없는 목록* 일번  * 이번    * 삼번+ 일번  + 이번    + 삼번- 일번  - 이번    - 삼번  일번          이번                  삼번                      일번          이번                  삼번                      일번          이번                  삼번                      4. 코드&lt; pre &gt; &lt; code &gt; 에 감싸서 사용한다.&lt;code&gt;Github&lt;/code&gt;Github  &lt;pre&gt;&lt;code&gt;  for i in range(1,2):    print(i)  &lt;/code&gt;&lt;/pre&gt;for i in range(1,2):  print(i)ps. 코드 하이라이터를 사용하는 경우(내 지킬 블로그 테마) js 대신에 원하는 언어를 넣을 수 있다. Rouge 하이라이터가 적용 되었다. for i in range(1,2):  print(i)   5. 수평선 ------************   6. 링크   인라인 링크 [Google](http://google.com)Google  자동 연결 링크&lt;http://google.com&gt;http://google.com  8. 강조진하게, 기울기, 취소선이 있다. 밑줄은 지원하지 않는다.*single asterisks*_single underscores_**double asterisks**__double underscores__~~cancelline~~single asteriskssingle underscoresdouble asterisksdouble underscorescancelline  9. 이미지![이미지 이름](이미지 url)로 이미지를 넣을 수 있다.![Image name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)  ps. 사이즈 조정&lt;img src=\"이미지 url\" width=\"원하는 크기\"&gt;&lt;img src=\"https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png\" width=\"60%\"&gt;  10. 표 그리기표는 마크다운 표를 generate 해주는 사이트가 있다. 원하는 양식에 맞춰서 만들어서 갖다가 쓰면 편하다.  표 generate 사이트 : https://www.tablesgenerator.com/markdown_tablesFirst Header  | Second Header------------- | -------------Content Cell  | Content CellContent Cell  | Content Cell            First Header      Second Header                  Content Cell      Content Cell              Content Cell      Content Cell      내용 정렬은 아래와 같이 한다.First Header  | Second Header | Third Header:------------ | :-----------: | -----------:Left          | Center        | Right            First Header      Second Header      Third Header                  Left      Center      Right        11. 수식(테마에서 지원)$$ f(x) = \\int \\frac{2x^2+4x+6}{x-2} $$",
+        "url": "//develop/githubblog/2018/11/10/GitHub2.html"
+      }
+      ,
     
       "develop-webprogramming-2018-11-09-php2-html": {
         "title": "PHP 데이터베이스 연동",
@@ -196,63 +223,63 @@
         "date": "November 9, 2018",
         "author": "",
         "category": "",
-        "content": "To follow up with your build in a real-timeYour site can be accessed from local:4000 as defaultjekyll serve --incrementalTo post/overwrite to the GitHub Servergit add .git commit -m \"comment\"git push -u origin master",
+        "content": "To follow up with your build in a real-timeYour site can be accessed from local:4000 as defaultjekyll serve --incrementalTo post/overwrite to the GitHub Servergit add .git commit -m \"comment\"git push -u origin masterIf push command is not working, try to force push(This occurs when the remote contains work that you do not have locally)git push -u origin master --force",
         "url": "//develop/githubblog/2018/11/09/GitHub1.html"
       }
       ,
     
-      "android-noroot-2018-11-08-noroot3-html": {
+      "life-noroot-2018-11-08-noroot3-html": {
         "title": "[Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드",
         "tags": "Android",
         "date": "November 8, 2018",
         "author": "",
         "category": "",
         "content": "기본적으로 adb, fastboot는 컴퓨터에twrp.zip, magisk.zip은 핸드폰 안에 들어가 있는 전제밑의 링크 들어가서 올리고싶은 버전으로 올리기.OTA file 다운로드TWRP 같은 버전 img파일 받아서 platform-tools 폴더 안에 넣어놓기(편하게 OTA 파일은 update.zipTWRP 이미지 파일은 twrp.img로바꾸고 실행)(MAC은 커맨드 앞에 항상 ./)adb reboot recovery패턴 걸려있으면 풀어주고Advanced -&gt; ADB SideloadSwipe to Start Sideloadadb sideload update.zipSideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.다시 한번 adb reboot recovery로 부팅하면 기본 리커버리가 실행되므로adb reboot bootloaderfastboot boot twrp.imgtwrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zipflash해주면 다시 재루팅 완료출처: http://yk364.tistory.com/category [Developer]",
-        "url": "//android/noroot/2018/11/08/noroot3.html"
+        "url": "//life/noroot/2018/11/08/noroot3.html"
       }
       ,
     
-      "android-noroot-2018-11-08-noroot2-html": {
+      "life-noroot-2018-11-08-noroot2-html": {
         "title": "Immersive Mode [without ROOT] with Edge Gesture",
         "tags": "Android",
         "date": "November 8, 2018",
         "author": "",
         "category": "",
         "content": "Instruction below still can access NavBar by swiping up from the bottom.(Or from certain apps, when swipe down notification bar)      Enable USB debugging on your phone settings (개발자옵션 활성화 후, 두번째 세션에 있는 USB Debugging 활성화)        Download and extract Google-platform-tools.zip (ADB) to your computer  (https://developer.android.com/studio/release/platform-tools.html)  Launch Command Prompt(압축해제만 해놓은 상태에서 platform-tools 폴더가 있는 곳으로 directory 설정해주고 명령 입력)  Execute any of the following commands:** Hide navigation bar and status bar **adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox** Hide only navigation bar **adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox** Reverse all **adb shell settings put global policy_control immersive.full=To completely get rid of Navigation Bar (Squeeze works)IMMERSIVE MODE FINAL** PIXEL 2 **adb shell wm overscan 0,0,0,-150** PIXEL 2  XL **adb shell wm overscan 0,0,0,-170Edge Gesture (Recommended Gesture App)Immersive Mode랑 현재로서는 개인적으로 가장 잘어울린다고 생각하는 제스쳐 앱(Android P beta 2 사용중인데 switch to previous app은 제스쳐로 안먹히는 상태. 곧 패치 될 것이라고 예상)",
-        "url": "//android/noroot/2018/11/08/noroot2.html"
+        "url": "//life/noroot/2018/11/08/noroot2.html"
       }
       ,
     
-      "android-noroot-2018-11-07-noroot1-html": {
+      "life-noroot-2018-11-07-noroot1-html": {
         "title": "First Testing Post",
         "tags": "Android",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "Just testing out code Entrydef print_hi(name):  print(\"hello\", name)  print(\"Welcome to Python\")​&lt;html&gt;  &lt;body&gt;  &lt;h1&gt;Just Testing&lt;/h1&gt;  &lt;/body&gt;&lt;/html&gt;Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
-        "url": "//android/noroot/2018/11/07/noroot1.html"
+        "url": "//life/noroot/2018/11/07/noroot1.html"
       }
       ,
     
-      "android-root-2018-11-07-root2-html": {
+      "life-root-2018-11-07-root2-html": {
         "title": "[ROOT] Disable Navigation Bar 네비게이션바 없애는 법",
         "tags": "Android",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "Download any type of explorer which can access build.prop file. (The easiest way would be downloading Build.promp Editor app)Grant Root Access (Press Edit)qemu.hw.mainkeys=1Save and RestartCheck out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
-        "url": "//android/root/2018/11/07/root2.html"
+        "url": "//life/root/2018/11/07/root2.html"
       }
       ,
     
-      "android-root-2018-11-07-root1-html": {
+      "life-root-2018-11-07-root1-html": {
         "title": "[ROOT] Security Patch Sideload 보안 패치 올리는 법",
         "tags": "Android",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "기본적으로 adb, fastboot는 컴퓨터에twrp.zip, magisk.zip은 핸드폰 안에 들어가 있는 전제밑의 링크 들어가서 올리고싶은 버전으로 올리기.OTA file 다운로드TWRP 같은 버전 img파일 받아서 platform-tools 폴더 안에 넣어놓기(편하게 OTA 파일은 update.zipTWRP 이미지 파일은 twrp.img로바꾸고 실행)(MAC은 커맨드 앞에 항상 ./)adb reboot recovery패턴 걸려있으면 풀어주고Advanced -&gt; ADB SideloadSwipe to Start Sideloadadb sideload update.zipSideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.다시 한번adb reboot recovery부팅하면 기본 리커버리가 실행되므로adb reboot bootloaderfastboot boot twrp.imgtwrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zipflash해주면 다시 재루팅 완료Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
-        "url": "//android/root/2018/11/07/root1.html"
+        "url": "//life/root/2018/11/07/root1.html"
       }
       
     
