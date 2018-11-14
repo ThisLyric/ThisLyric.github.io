@@ -11,8 +11,8 @@
 	<meta property="og:image" content="https://user-images.githubusercontent.com/43384877/48309105-4b5f3b00-e540-11e8-9245-524fa94ca4f3.png">
 	<meta property="og:url" content="https://thislyric.github.io/">
 
-	<title>[ROOT] Disable Navigation Bar 네비게이션바 없애는 법 | ThisLyric</title>
-	<meta name="description" content="Download any type of explorer which can access build.prop file. (The easiest way would be downloading Build.promp Editor app)">
+	<title>JavaScript(1) | ThisLyric</title>
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -22,7 +22,7 @@
 	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
 
 	<!-- Canonical -->
-	<link rel="canonical" href="/life/root/2018/11/07/root2.html">
+	<link rel="canonical" href="/develop/webprogramming/2018/11/14/JS-1.html">
 
 	<!-- RSS -->
 	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
@@ -169,29 +169,85 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">[ROOT] Disable Navigation Bar 네비게이션바 없애는 법</h1>
+    <h1 class="title">JavaScript(1)</h1>
     
     <p class="meta">
-      November 7, 2018
+      November 14, 2018
       
     </p>
   </header>
-  <section class="post-content"><p>Download any type of explorer which can access build.prop file. (The easiest way would be downloading Build.promp Editor app)</p>
+  <section class="post-content"><p><br /><br /></p>
 
-<p>Grant Root Access (Press Edit)</p>
+<blockquote>
+  <p>Opening Window</p>
+</blockquote>
 
-<p><code class="highlighter-rouge">qemu.hw.mainkeys=1</code></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/javascript"&gt;
+  function popup(url) {
+    popUpWindow=windows.open(
+      url,'popUpWindow','height=300,width=400,scrollbar=yes,toolbar=yes,menubar=no,status=yes'
+    )
+  }
+&lt;/script&gt;
+&lt;body&gt;
+&lt;button type="button" value="open"&gt;
+  &lt;a href="JavaSCript:popup('url.php');"&gt;Click for Popup!
+&lt;/a&gt;&lt;/button&gt;
+&lt;/body&gt;
+</code></pre></div></div>
+<script type="text/javascript">
+  function popup(url) {
+    popUpWindow=windows.open(
+      url,'popUpWindow','height=300,width=400,scrollbar=yes,toolbar=yes,menubar=no,status=yes'
+    )
+  }
+</script>
 
-<p>Save and Restart</p>
+<body>
+<button type="button" value="open">
+  <a href="JavaSCript:popup('url.php');">Click for Popup!
+</a></button>
+</body>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+<p><br /><br /></p>
 
+<blockquote>
+  <p>Closing Window</p>
+</blockquote>
+
+<p><br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script&gt;
+  function exit(){
+    window.close();
+  }
+&lt;/script&gt;
+&lt;body&gt;
+  &lt;button type="button" value="close!"&gt;
+    &lt;a href="JavaSCript:exit();"&gt;Click to Close
+  &lt;/a&gt;&lt;/button&gt;
+&lt;/body&gt;
+</code></pre></div></div>
+
+<script>
+  function exit(){
+    window.close();
+  }
+</script>
+
+<body>
+  <button type="button" value="close!">
+    <a href="JavaSCript:exit();">Click to Close
+  </a></button>
+</body>
+
+<p><br /><br /><br /></p>
 </section>
   
 <footer>
   <div class="tags">
     
-    <a class="tag" href="/tags#Android">#Android</a>
+    <a class="tag" href="/tags#JavaScript">#JavaScript</a>
     
   </div>
 </footer>
@@ -199,7 +255,7 @@
 
 </article>
 <!-- Disqus -->
-<a href="https://thislyric.github.io/life/root/2018/11/07/root2.html#disqus_thread"></a>
+<a href="https://thislyric.github.io/develop/webprogramming/2018/11/14/JS-1.html#disqus_thread"></a>
 
 <div class="comments">
   <div id="disqus_thread"></div>
@@ -238,18 +294,11 @@ Add following to the page before </body>
   
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
-      <a href="/life/root/2018/11/07/root1.html">
-        [ROOT] Security Patch Sideload 보안 패치 올리는 법
+      <a href="/life/mac/2018/11/10/Spectacle.html">
+        Split view like Windows or Linux - Spectacle
       </a>
   </div>
   
-  
-  <div id="next-post" class="post-nav-post">
-      <p>Next post</p>
-      <a href="/life/noroot/2018/11/07/noroot1.html">
-        First Testing Post
-      </a>
-  </div>
   
 </div>
 
