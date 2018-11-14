@@ -50,19 +50,22 @@ feature-img: "assets/img/sample_feature_img.png"
 
 ---------------------------
 
-<h3>1. Skills</h3>
- <p class="tab"> * Program Language : Python, Java, C, HTML, mySQL</p>
- <p class="tab"> * Database : MySQL, JavaScript</p>
- <p class="tab"> * ETC : GitLab, Mac OS, Windows</p>
+> <subtitle>Skills</subtitle>
+
+ <p class="tab">Program Language : Python, Java, C, HTML, php, Javascript, mySQL</p>
+ <p class="tab">Database : MySQL, JavaScript</p>
+ <p class="tab">ETC : GitLab, Mac OS, Windows</p>
 
 
 <br>
-<h3>2. Interest</h3>
-   <p class="tab"> * Android Programming </p>
+> <subtitle>Interest</subtitle>
+
+   <p class="tab">Android Programming, Web Application, Operating Systems</p>
 
 <br>
 
-<h3>3. Experience</h3>
+> <subtitle>Experience</subtitle>
+
 <p class="tab">2016.8 ~ Present</p>
 <p class="tab2">Montclair State University IT Service Desk</p>
 <!--
@@ -74,4 +77,4 @@ feature-img: "assets/img/sample_feature_img.png"
 </div>
 -->
 <br>
-<h3>4. Project</h3>
+> <subtitle>Project</subtitle>
