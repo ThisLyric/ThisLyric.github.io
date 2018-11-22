@@ -11,8 +11,8 @@
 	<meta property="og:image" content="https://user-images.githubusercontent.com/43384877/48309105-4b5f3b00-e540-11e8-9245-524fa94ca4f3.png">
 	<meta property="og:url" content="https://thislyric.github.io/">
 
-	<title>PHP 데이터베이스 연동 | ThisLyric</title>
-	<meta name="description" content="form이 들어간 html이고데이터에서 어떤 데이터를 끌어올지 결정&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    h1 {      font-family: fantasy;    }    label {      font-family: mo...">
+	<title>PHP (2) - Connect to Database | ThisLyric</title>
+	<meta name="description" content="Users will determine which categories they want to see&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    h1 {      font-family: fantasy;    }    label {    ...">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -169,15 +169,14 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">PHP 데이터베이스 연동</h1>
+    <h1 class="title">PHP (2) - Connect to Database</h1>
     
     <p class="meta">
       November 9, 2018
       
     </p>
   </header>
-  <section class="post-content"><p>form이 들어간 html이고
-데이터에서 어떤 데이터를 끌어올지 결정</p>
+  <section class="post-content"><p>Users will determine which categories they want to see</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;style&gt;</span>
@@ -224,8 +223,9 @@
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p>php파일로 html메인페이지에서 받았을떄 알고리즘 적용
-카테고리 선택시 선택사항만 output</p>
+
+<p>When category is selected from index.html file
+php will set up PDO to database and brings up contents from sql</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;style&gt;</span>
@@ -342,7 +342,8 @@
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p>데이터베이스 코드</p>
+
+<p>Database code</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- phpMyAdmin SQL Dump
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
@@ -393,7 +394,8 @@ ON books.*
 TO iw3htp@localhost
 IDENTIFIED BY 'password';
 </code></pre></div></div>
-<p>최초로 phpmyadmin에서 import할때는 drop user 불필요</p>
+
+<p>drop user is not needed when first time imported from phpmyadmin</p>
 </section>
   
 <footer>
@@ -447,7 +449,7 @@ Add following to the page before </body>
   <div id="previous-post" class="post-nav-post">
       <p>Previous post</p>
       <a href="/develop/webprogramming/2018/11/09/php-1.html">
-        PHP 기본
+        PHP (1)
       </a>
   </div>
   

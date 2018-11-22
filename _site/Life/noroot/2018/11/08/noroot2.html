@@ -12,7 +12,7 @@
 	<meta property="og:url" content="https://thislyric.github.io/">
 
 	<title>Immersive Mode [without ROOT] with Edge Gesture | ThisLyric</title>
-	<meta name="description" content="Instruction below still can access NavBar by swiping up from the bottom.">
+	<meta name="description" content="Instruction below still can access NavBar by swiping up from the bottom.(Or from certain apps, when swipe down notification bar)">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -176,9 +176,8 @@
       
     </p>
   </header>
-  <section class="post-content"><p>Instruction below still can access NavBar by swiping up from the bottom.</p>
-
-<p>(Or from certain apps, when swipe down notification bar)</p>
+  <section class="post-content"><p>Instruction below still can access NavBar by swiping up from the bottom.
+(Or from certain apps, when swipe down notification bar)</p>
 
 <ol>
   <li>
@@ -189,7 +188,7 @@
   </li>
 </ol>
 
-<p>(https://developer.android.com/studio/release/platform-tools.html)</p>
+<p><a href="https://developer.android.com/studio/releases/platform-tools">Click here</a></p>
 
 <ol>
   <li>Launch Command Prompt</li>
@@ -202,36 +201,29 @@
 </ol>
 
 <p>** Hide navigation bar and status bar **</p>
-
-<p>adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox</p>
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox
+</code></pre></div></div>
 <p>** Hide only navigation bar **</p>
-
-<p>adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox</p>
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox
+</code></pre></div></div>
 <p>** Reverse all **</p>
-
-<p>adb shell settings put global policy_control immersive.full=</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell settings put global policy_control immersive.full=
+</code></pre></div></div>
 
 <p>To completely get rid of Navigation Bar (Squeeze works)</p>
 
 <p>IMMERSIVE MODE FINAL</p>
 
 <p>** PIXEL 2 **</p>
-
-<p>adb shell wm overscan 0,0,0,-150</p>
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>adb shell wm overscan 0,0,0,-150
+</code></pre></div></div>
 <p>** PIXEL 2  XL **</p>
-
-<p>adb shell wm overscan 0,0,0,-170</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> adb shell wm overscan 0,0,0,-170
+</code></pre></div></div>
 
 <h3>Edge Gesture (Recommended Gesture App)</h3>
 
 <center><img src="/assets/img/EdgeGesture.png" width="30%" /></center>
-
-<p>Immersive Mode랑 현재로서는 개인적으로 가장 잘어울린다고 생각하는 제스쳐 앱</p>
-
-<p>(Android P beta 2 사용중인데 switch to previous app은 제스쳐로 안먹히는 상태. 곧 패치 될 것이라고 예상)</p>
 </section>
   
 <footer>

@@ -11,8 +11,8 @@
 	<meta property="og:image" content="https://user-images.githubusercontent.com/43384877/48309105-4b5f3b00-e540-11e8-9245-524fa94ca4f3.png">
 	<meta property="og:url" content="https://thislyric.github.io/">
 
-	<title>PHP 기본 | ThisLyric</title>
-	<meta name="description" content="아래는 메인 .html 파일 Form을 작성될시 .php로 정보를 보낸다.```&lt;!DOCTYPE html&gt;          Welcome to PHP  ">
+	<title>PHP (1) | ThisLyric</title>
+	<meta name="description" content="Main page that requires a form to access php file when posted```&lt;!DOCTYPE html&gt;          Welcome to PHP  ">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- CSS -->
@@ -169,14 +169,14 @@
     <div class="content">
       <article >
   <header style="background-image: url('/')">
-    <h1 class="title">PHP 기본</h1>
+    <h1 class="title">PHP (1)</h1>
     
     <p class="meta">
       November 9, 2018
       
     </p>
   </header>
-  <section class="post-content"><p>아래는 메인 .html 파일 Form을 작성될시 .php로 정보를 보낸다.</p>
+  <section class="post-content"><p>Main page that requires a form to access php file when posted</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;style&gt;</span>
@@ -237,8 +237,7 @@
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
-<p>아래는 연동된 PHP File
-Form에서 주어진 name을 $_POST[]를 이용해서 불러온다.</p>
+<p>By using $_POST[], it will read user input from index.html file.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
   <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'submit'</span><span class="p">])){</span>
@@ -318,7 +317,7 @@ Add following to the page before </body>
   <div id="next-post" class="post-nav-post">
       <p>Next post</p>
       <a href="/develop/webprogramming/2018/11/09/php-2.html">
-        PHP 데이터베이스 연동
+        PHP (2) - Connect to Database
       </a>
   </div>
   

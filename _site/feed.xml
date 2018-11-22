@@ -5,12 +5,12 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 14 Nov 2018 17:11:55 -0500</pubDate>
-    <lastBuildDate>Wed, 14 Nov 2018 17:11:55 -0500</lastBuildDate>
+    <pubDate>Thu, 22 Nov 2018 18:21:33 -0500</pubDate>
+    <lastBuildDate>Thu, 22 Nov 2018 18:21:33 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>JavaScript(1)</title>
+        <title>JavaScript (1) - popUpWindow</title>
         <description>&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -423,9 +423,8 @@ Replace the codes:
       </item>
     
       <item>
-        <title>PHP 데이터베이스 연동</title>
-        <description>&lt;p&gt;form이 들어간 html이고
-데이터에서 어떤 데이터를 끌어올지 결정&lt;/p&gt;
+        <title>PHP (2) - Connect to Database</title>
+        <description>&lt;p&gt;Users will determine which categories they want to see&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
@@ -472,8 +471,9 @@ Replace the codes:
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;php파일로 html메인페이지에서 받았을떄 알고리즘 적용
-카테고리 선택시 선택사항만 output&lt;/p&gt;
+
+&lt;p&gt;When category is selected from index.html file
+php will set up PDO to database and brings up contents from sql&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
@@ -590,7 +590,8 @@ Replace the codes:
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;데이터베이스 코드&lt;/p&gt;
+
+&lt;p&gt;Database code&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;-- phpMyAdmin SQL Dump
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
@@ -641,7 +642,8 @@ ON books.*
 TO iw3htp@localhost
 IDENTIFIED BY 'password';
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;최초로 phpmyadmin에서 import할때는 drop user 불필요&lt;/p&gt;
+
+&lt;p&gt;drop user is not needed when first time imported from phpmyadmin&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/develop/webprogramming/2018/11/09/php-2.html</link>
@@ -655,8 +657,8 @@ IDENTIFIED BY 'password';
       </item>
     
       <item>
-        <title>PHP 기본</title>
-        <description>&lt;p&gt;아래는 메인 .html 파일 Form을 작성될시 .php로 정보를 보낸다.&lt;/p&gt;
+        <title>PHP (1)</title>
+        <description>&lt;p&gt;Main page that requires a form to access php file when posted&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;style&amp;gt;&lt;/span&gt;
@@ -717,8 +719,7 @@ IDENTIFIED BY 'password';
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;아래는 연동된 PHP File
-Form에서 주어진 name을 $_POST[]를 이용해서 불러온다.&lt;/p&gt;
+&lt;p&gt;By using $_POST[], it will read user input from index.html file.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_POST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'submit'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])){&lt;/span&gt;
@@ -841,9 +842,8 @@ git push -u origin master
     
       <item>
         <title>Immersive Mode [without ROOT] with Edge Gesture</title>
-        <description>&lt;p&gt;Instruction below still can access NavBar by swiping up from the bottom.&lt;/p&gt;
-
-&lt;p&gt;(Or from certain apps, when swipe down notification bar)&lt;/p&gt;
+        <description>&lt;p&gt;Instruction below still can access NavBar by swiping up from the bottom.
+(Or from certain apps, when swipe down notification bar)&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -854,7 +854,7 @@ git push -u origin master
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;(https://developer.android.com/studio/release/platform-tools.html)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://developer.android.com/studio/releases/platform-tools&quot;&gt;Click here&lt;/a&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Launch Command Prompt&lt;/li&gt;
@@ -867,36 +867,29 @@ git push -u origin master
 &lt;/ol&gt;
 
 &lt;p&gt;** Hide navigation bar and status bar **&lt;/p&gt;
-
-&lt;p&gt;adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox&lt;/p&gt;
-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;** Hide only navigation bar **&lt;/p&gt;
-
-&lt;p&gt;adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox&lt;/p&gt;
-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;** Reverse all **&lt;/p&gt;
-
-&lt;p&gt;adb shell settings put global policy_control immersive.full=&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell settings put global policy_control immersive.full=
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To completely get rid of Navigation Bar (Squeeze works)&lt;/p&gt;
 
 &lt;p&gt;IMMERSIVE MODE FINAL&lt;/p&gt;
 
 &lt;p&gt;** PIXEL 2 **&lt;/p&gt;
-
-&lt;p&gt;adb shell wm overscan 0,0,0,-150&lt;/p&gt;
-
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell wm overscan 0,0,0,-150
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;** PIXEL 2  XL **&lt;/p&gt;
-
-&lt;p&gt;adb shell wm overscan 0,0,0,-170&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; adb shell wm overscan 0,0,0,-170
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3&gt;Edge Gesture (Recommended Gesture App)&lt;/h3&gt;
 
 &lt;center&gt;&lt;img src=&quot;/assets/img/EdgeGesture.png&quot; width=&quot;30%&quot; /&gt;&lt;/center&gt;
-
-&lt;p&gt;Immersive Mode랑 현재로서는 개인적으로 가장 잘어울린다고 생각하는 제스쳐 앱&lt;/p&gt;
-
-&lt;p&gt;(Android P beta 2 사용중인데 switch to previous app은 제스쳐로 안먹히는 상태. 곧 패치 될 것이라고 예상)&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Nov 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/life/noroot/2018/11/08/noroot2.html</link>
@@ -942,7 +935,7 @@ git push -u origin master
         <link>http://localhost:4000/life/noroot/2018/11/07/noroot1.html</link>
         <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/07/noroot1.html</guid>
         
-        <category>Android</category>
+        <category>Testing</category>
         
         
         <category>Life/noRoot</category>
@@ -950,17 +943,17 @@ git push -u origin master
       </item>
     
       <item>
-        <title>[ROOT] Disable Navigation Bar 네비게이션바 없애는 법</title>
-        <description>&lt;p&gt;Download any type of explorer which can access build.prop file. (The easiest way would be downloading Build.promp Editor app)&lt;/p&gt;
+        <title>[ROOT] Disable Navigation Bar</title>
+        <description>&lt;p&gt;Download any type of explorer which can access build.prop file.&lt;/p&gt;
+
+&lt;p&gt;(The easiest way would be downloading Build.prop Editor app)&lt;/p&gt;
 
 &lt;p&gt;Grant Root Access (Press Edit)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;qemu.hw.mainkeys=1&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;qemu.hw.mainkeys=1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Save and Restart&lt;/p&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
         <link>http://localhost:4000/life/root/2018/11/07/root2.html</link>

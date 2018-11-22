@@ -255,7 +255,7 @@
       <header>
         <h2>
           <a class="post-link" href="/develop/webprogramming/2018/11/14/JS-1.html">
-            JavaScript(1)
+            JavaScript (1) - popUpWindow
           </a>
         </h2>
         <p class="meta">
@@ -323,15 +323,14 @@
       <header>
         <h2>
           <a class="post-link" href="/develop/webprogramming/2018/11/09/php-2.html">
-            PHP 데이터베이스 연동
+            PHP (2) - Connect to Database
           </a>
         </h2>
         <p class="meta">
           November 9, 2018
         </p>
         <div class="excerpt">
-          <!--<p>form이 들어간 html이고
-데이터에서 어떤 데이터를 끌어올지 결정</p>
+          <!--<p>Users will determine which categories they want to see</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;style&gt;</span>
@@ -378,79 +377,7 @@
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
-<p>php파일로 html메인페이지에서 받았을떄 알고리즘 적용
-카테고리 선택시 선택사항만 output
-```
-&lt;!DOCTYPE html&gt;</p>
-<html>
-  <style>
-    div.top {
-      position: absolute;
-      align-items: center;
-      left: 30%;
-    }
-    div.bot {
-      position: relative;
-      top: 300px;
-    }
-    table {
-      margin: auto;
-      /*position:relative;
-      top:100px;*/
-      border: 2px solid red;
-      color:yellow;
-      border-color:blue;
-      font-family: fantasy;
-      text-align: center;
-    }
-    body {
-      background-color: black;
-      color: white;
-      position: relative;
-    }
-  </style>
-  <?php
-    $dsn="mysql:host=localhost;dbname=books";
-    $username="iw3htp";
-    $password="password";
-    $id=$_POST['view'];
-    $cnt=0;
-    try {
-      $conn=new PDO($dsn,$username,$password);
-      $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-      $getAll=$conn->prepare("SELECT * FROM books");
-      $getAll->execute();
-    }catch(PDOException $e) {
-      echo "Error: ".$e->getMessage();
-    }
-    $connect=null;
-  ?>
-  <head>
-    <meta charset="utf-8" />
-    <title>Selected contents</title>
-  </head>
-  <body>
-    <?php
-      $getAll=$conn->prepare("SELECT * FROM books ORDER BY id ASC");
-      $getAll->execute();
-     ?>
-     <div class="top">
-    &lt;table border = 1&gt;
-      <?php
-        switch($id) {
-          case 'all':
-            for ($i=0; $view=$getAll->fetch(); $i++) {
-              $cnt=$i+1;?>
-       <tr>
-         <td><?php echo $view['id']?></td>
-         <td><?php echo $view['title']?></td>
-         <td><?php echo $view['category']?></td>
-         <td><?php echo $view['isbn']?></td>
-       </tr>
-      &lt;?php }
-        break;
 
-</div></body></html>
 
           <a class="button" href="/develop/webprogramming/2018/11/09/php-2.html">
             Continue reading
@@ -463,14 +390,14 @@
       <header>
         <h2>
           <a class="post-link" href="/develop/webprogramming/2018/11/09/php-1.html">
-            PHP 기본
+            PHP (1)
           </a>
         </h2>
         <p class="meta">
           November 9, 2018
         </p>
         <div class="excerpt">
-          <!--<p>아래는 메인 .html 파일 Form을 작성될시 .php로 정보를 보낸다.
+          <!--<p>Main page that requires a form to access php file when posted
 ```
 &lt;!DOCTYPE html&gt;</p>
 <html>
