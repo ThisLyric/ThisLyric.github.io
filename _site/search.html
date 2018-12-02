@@ -183,6 +183,17 @@
 <script>
   window.store = {
     
+      "develop-webprogramming-2018-12-01-js-2-html": {
+        "title": "JavaScript (2) - Popup Input when page loads",
+        "tags": "JavaScript",
+        "date": "December 1, 2018",
+        "author": "",
+        "category": "",
+        "content": "&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;meta charset='utf-8'&gt;  &lt;/head&gt;  &lt;script type=\"text/JavaScript\"&gt;    function read() {      while(true){        var num = parseInt(prompt(\"Enter a number: \"));        if(num&gt;=5 &amp;&amp; num&lt;=20){          break;        }        else {          alert(\"input not in range. Try again: \");        }      }      return num;    }    function star(){      var num1 = read();      var num2 = read();      var num3 = read();      for(var i=0; i&lt;num1; i++){        document.getElementById(\"div1\").innerHTML += \"*\";      }      for(var i=0; i&lt;num2; i++){        document.getElementById(\"div2\").innerHTML += \"*\";      }      for(var i=0; i&lt;num3; i++){        document.getElementById(\"div3\").innerHTML += \"*\";      }    }  &lt;/script&gt;  &lt;style type=\"text/css\"&gt;    body {      background-color: black;    }    #div1{      color:red;      font-size: 500%;    }    #div2{      color:yellow;      font-size: 500%;    }    #div3{      color:blue;      font-size: 500%;    }  &lt;/style&gt;  &lt;body onload=\"star()\"&gt;    &lt;div id=\"div1\"&gt;&lt;/div&gt;    &lt;div id=\"div2\"&gt;&lt;/div&gt;    &lt;div id=\"div3\"&gt;&lt;/div&gt;  &lt;/body&gt;&lt;/html&gt;Two ways to prompt to users  Use onload=”function()” inside body brackets  include window.load=function(); in the script section.          script needs to be included in the body brackets      &lt;body&gt;&lt;script&gt;window.load=function();&lt;/script&gt;&lt;/body&gt;      ",
+        "url": "//develop/webprogramming/2018/12/01/JS-2.html"
+      }
+      ,
+    
       "develop-webprogramming-2018-11-14-js-1-html": {
         "title": "JavaScript (1) - popUpWindow",
         "tags": "JavaScript",
