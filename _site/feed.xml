@@ -5,9 +5,30 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Dec 2018 19:22:07 -0500</pubDate>
-    <lastBuildDate>Sat, 01 Dec 2018 19:22:07 -0500</lastBuildDate>
+    <pubDate>Mon, 03 Dec 2018 23:19:23 -0500</pubDate>
+    <lastBuildDate>Mon, 03 Dec 2018 23:19:23 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>CSS (1) - Reference</title>
+        <description>&lt;subtitle&gt;Animation Generation Tool (Webkit + Keyframes)&lt;/subtitle&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;b&gt;&lt;a href=&quot;http://animista.net/&quot; target=&quot;_blank&quot;&gt;Click to visit: Animista&lt;/a&gt;&lt;/b&gt;
+&lt;img width=&quot;1677&quot; alt=&quot;screen shot 2018-12-03 at 11 17 23 pm&quot; src=&quot;https://user-images.githubusercontent.com/43384877/49418742-afe17480-f751-11e8-931b-9a7f823dc01c.png&quot; /&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;img width=&quot;1675&quot; alt=&quot;screen shot 2018-12-03 at 11 17 45 pm&quot; src=&quot;https://user-images.githubusercontent.com/43384877/49418747-b5d75580-f751-11e8-8f4a-550aa9cf8c64.png&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Mon, 03 Dec 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/develop/webprogramming/2018/12/03/CSS-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/12/03/CSS-1.html</guid>
+        
+        <category>CSS</category>
+        
+        
+        <category>Develop/WebProgramming</category>
+        
+      </item>
     
       <item>
         <title>JavaScript (2) - Popup Input when page loads</title>
@@ -1077,7 +1098,8 @@ git push -u origin master
 
 &lt;p&gt;Swipe to Start Sideload&lt;/p&gt;
 
-&lt;p&gt;adb sideload update.zip&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb sideload update.zip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Sideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.&lt;/p&gt;
 
