@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
+	<meta name="naver-site-verification" content="c10e6e896289c98fe8dcda068918cdbd3f309211"/>
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ThisLyric's IT Blog">
+	<meta property="og:description" content="Computer Science">
+	<meta property="og:image" content="https://user-images.githubusercontent.com/43384877/48309105-4b5f3b00-e540-11e8-9245-524fa94ca4f3.png">
+	<meta property="og:url" content="https://thislyric.github.io/">
+
+	<title>JavaScript (3) - Simple JavaScript Workaround | ThisLyric</title>
+	<meta name="description" content="  Live Clock appears when button clicked">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/develop/webprogramming/2018/12/06/JS-3.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+
+
+	</script>
+	
+
+
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2204304584306848",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">ThisLyric</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/about/">About</a></li>
+				<li><a>Development</a>
+					<ul>
+						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
+						<li><a href="/Develop/WebProgramming">Web</a></li>
+					</ul>
+				</li>
+				<li><a>Life</a>
+					<ul>
+						<li><a href="/Life/Root">AndroidRoot</a></li>
+						<li><a href="/Life/noRoot">AndroidNoRoot</a></li>
+						<li><a href="/Life/Mac">Mac</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">JavaScript (3) - Simple JavaScript Workaround</h1>
+    
+    <p class="meta">
+      December 6, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><blockquote>
+  <subtitle>Live Clock appears when button clicked</subtitle>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>lab1<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">'utf-8'</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">digit</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">digit</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">){</span>
+        <span class="nx">digit</span> <span class="o">=</span> <span class="s2">"0"</span> <span class="o">+</span> <span class="nx">digit</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nx">digit</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">time</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">span</span><span class="o">=</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"print"</span><span class="p">);</span>
+      <span class="nx">setInterval</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+        <span class="kd">var</span> <span class="nx">date</span><span class="o">=</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+        <span class="kd">var</span> <span class="nx">h</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getHours</span><span class="p">());</span>
+        <span class="kd">var</span> <span class="nx">m</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getMinutes</span><span class="p">());</span>
+        <span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getSeconds</span><span class="p">());</span>
+        <span class="kd">var</span> <span class="nx">ms</span> <span class="o">=</span> <span class="p">(</span><span class="nx">date</span><span class="p">.</span><span class="nx">getMilliseconds</span><span class="p">()</span><span class="o">/</span><span class="mi">100</span><span class="p">).</span><span class="nx">toFixed</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+        <span class="nx">span</span><span class="p">.</span><span class="nx">innerText</span><span class="o">=</span><span class="nx">h</span><span class="o">+</span><span class="s2">":"</span><span class="o">+</span><span class="nx">m</span><span class="o">+</span><span class="s2">":"</span><span class="o">+</span><span class="nx">s</span><span class="o">+</span><span class="s2">"."</span><span class="o">+</span><span class="nx">ms</span><span class="p">;</span>
+      <span class="p">},</span> <span class="mi">100</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nt">body</span> <span class="p">{</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">button</span> <span class="p">{</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span><span class="no">black</span><span class="p">;</span>
+      <span class="nl">border</span><span class="p">:</span><span class="m">0</span><span class="p">;</span>
+      <span class="nl">font-size</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span><span class="nb">cursive</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#container</span> <span class="p">{</span>
+      <span class="nl">text-align</span><span class="p">:</span><span class="nb">center</span><span class="p">;</span>
+      <span class="nl">color</span><span class="p">:</span><span class="no">white</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#print</span> <span class="p">{</span>
+      <span class="nl">font-size</span><span class="p">:</span><span class="m">150px</span><span class="p">;</span>
+      <span class="nl">font-family</span><span class="p">:</span> <span class="nb">fantasy</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">'container'</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">onClick=</span><span class="s">"time()"</span><span class="nt">&gt;</span>What time is it?<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"print"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+<p><a href="../../../liveclock.html">Click here for demo</a></p>
+
+<blockquote>
+  <subtitle>Image will move inside the box depends on the user input of speec</subtitle>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Bouncing Logo<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nt">div</span><span class="nc">.bound</span> <span class="p">{</span>
+      <span class="nl">display</span><span class="p">:</span><span class="nb">block</span><span class="p">;</span>
+      <span class="nl">border-style</span><span class="p">:</span><span class="nb">solid</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span><span class="m">502px</span><span class="p">;</span>
+      <span class="nl">height</span><span class="p">:</span><span class="m">402px</span><span class="p">;</span>
+      <span class="nl">border-width</span><span class="p">:</span><span class="m">1px</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">div</span><span class="nc">.move</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span><span class="nb">absolute</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">input</span><span class="nc">.main</span><span class="p">{</span>
+      <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">24px</span><span class="p">;</span>
+      <span class="nl">border-radius</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+      <span class="nl">width</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+      <span class="nl">color</span><span class="p">:</span> <span class="no">black</span><span class="p">;</span>
+      <span class="nl">background-color</span><span class="p">:</span> <span class="m">#bddfeb</span><span class="p">;</span>
+      <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+      <span class="nl">border-color</span><span class="p">:</span> <span class="m">#bddfeb</span><span class="p">;</span>
+      <span class="nl">border-collapse</span><span class="p">:</span>
+       <span class="n">-webkit-transition-duration</span><span class="p">:</span> <span class="m">0.4s</span><span class="p">;</span> <span class="c">/* Safari */</span>
+      <span class="nl">transition-duration</span><span class="p">:</span> <span class="m">0.4s</span><span class="p">;</span>
+      <span class="nl">text-align</span><span class="p">:</span><span class="nb">center</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nf">#button</span><span class="p">{</span>
+      <span class="nl">padding-left</span><span class="p">:</span> <span class="m">402px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="kd">var</span> <span class="nx">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">y</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">max_x</span><span class="o">=</span><span class="mi">400</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">max_y</span><span class="o">=</span><span class="mi">300</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">xoffset</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">yoffset</span><span class="o">=</span><span class="mi">10</span><span class="p">;</span>
+
+    <span class="kd">function</span> <span class="nx">go</span><span class="p">(){</span>
+      <span class="kd">var</span> <span class="nx">speed</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="s2">"1:Faster; 2:Normal; 3:Slower; 4:INSANE MODE"</span><span class="p">);</span>
+      <span class="k">if</span> <span class="p">(</span><span class="nx">speed</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+        <span class="nx">speed</span> <span class="o">=</span> <span class="mi">50</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">speed</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+        <span class="nx">speed</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">speed</span><span class="o">==</span><span class="mi">3</span><span class="p">){</span>
+        <span class="nx">speed</span><span class="o">=</span><span class="mi">200</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">speed</span><span class="o">==</span><span class="mi">4</span><span class="p">){</span>
+        <span class="nx">speed</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="k">else</span><span class="p">{</span>
+        <span class="nx">alert</span><span class="p">(</span><span class="s2">"Pick a number between 1 and 3. Speed set to Default"</span><span class="p">);</span>
+        <span class="nx">speed</span><span class="o">=</span><span class="mi">200</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nx">moveCSLogo</span><span class="p">(</span><span class="nx">speed</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">moveCSLogo</span><span class="p">(</span><span class="nx">speed</span><span class="p">){</span>
+      <span class="nx">x</span><span class="o">+=</span><span class="nx">xoffset</span><span class="p">;</span>
+      <span class="nx">y</span><span class="o">+=</span><span class="nx">yoffset</span><span class="p">;</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"msucs"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">top</span> <span class="o">=</span> <span class="nx">y</span><span class="o">+</span><span class="s1">'px'</span><span class="p">;</span>
+      <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"msucs"</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">left</span> <span class="o">=</span> <span class="nx">x</span><span class="o">+</span><span class="s1">'px'</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">((</span><span class="nx">x</span><span class="o">+</span><span class="nx">xoffset</span> <span class="o">&gt;</span> <span class="nx">max_x</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nx">x</span><span class="o">+</span><span class="nx">xoffset</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="nx">xoffset</span> <span class="o">*=-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="k">if</span> <span class="p">((</span><span class="nx">y</span><span class="o">+</span><span class="nx">yoffset</span> <span class="o">&gt;</span> <span class="nx">max_y</span><span class="p">)</span> <span class="o">||</span> <span class="p">(</span><span class="nx">y</span><span class="o">+</span><span class="nx">yoffset</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="nx">yoffset</span> <span class="o">*=-</span><span class="mi">1</span><span class="p">;</span>
+      <span class="c1">//window.setTimeout('moveCSLogo()', option);</span>
+      <span class="nb">window</span><span class="p">.</span><span class="nx">setTimeout</span><span class="p">(</span><span class="s1">'moveCSLogo('</span><span class="o">+</span><span class="nx">speed</span><span class="o">+</span><span class="s1">')'</span><span class="p">,</span><span class="nx">speed</span><span class="p">);</span>
+
+    <span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;body</span> <span class="na">onload=</span><span class="s">"go()"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bound"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"msucs"</span> <span class="na">class=</span><span class="s">"move"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"mario.png"</span> <span class="na">width=</span><span class="s">"102px"</span> <span class="na">height=</span><span class="s">"102px"</span> <span class="na">alt=</span><span class="s">"need image here"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"lab2.html"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+      	<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"RELOAD!"</span> <span class="na">class =</span><span class="s">"main"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<blockquote>
+  <subtitle>Given sentence will move around and change its color when user click on it</subtitle>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Lab3<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;script&gt;</span>
+    <span class="kd">function</span> <span class="nx">getColor</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">letters</span> <span class="o">=</span><span class="s1">'0123456789abcdef'</span><span class="p">;</span>
+      <span class="kd">var</span> <span class="nx">color</span><span class="o">=</span><span class="s1">'#'</span><span class="p">;</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="nx">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="nx">color</span> <span class="o">=</span> <span class="nx">color</span> <span class="o">+</span> <span class="nx">letters</span><span class="p">[</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">16</span><span class="p">)];</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nx">color</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">getRand</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nb">String</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">round</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span><span class="o">*</span><span class="mi">500</span><span class="p">));</span>
+      <span class="nx">number</span> <span class="o">=</span> <span class="nx">number</span> <span class="o">+</span> <span class="s1">''</span><span class="p">;</span>
+      <span class="k">return</span> <span class="nx">number</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">function</span> <span class="nx">change</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">span</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'changeColor'</span><span class="p">);</span>
+      <span class="nx">span</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">color</span><span class="o">=</span><span class="nx">getColor</span><span class="p">();</span>
+      <span class="nx">span</span><span class="p">.</span><span class="nx">style</span><span class="p">.</span><span class="nx">padding</span> <span class="o">=</span> <span class="nx">getRand</span><span class="p">()</span><span class="o">+</span><span class="s1">'px'</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">onClick=</span><span class="s">"change()"</span> <span class="na">id=</span><span class="s">"changeColor"</span><span class="nt">&gt;</span>Welcome to CSIT: Click me to change color.<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#JavaScript">#JavaScript</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://thislyric.github.io/develop/webprogramming/2018/12/06/JS-3.html#disqus_thread"></a>
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://thislyric-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--
+Add following to the page before </body>
+<script id="dsq-count-scr" src="//thislyric-1.disqus.com/count.js" async></script>
+-->
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/develop/webprogramming/2018/12/03/CSS-1.html">
+        CSS (1) - Reference
+      </a>
+  </div>
+  
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

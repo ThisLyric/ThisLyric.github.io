@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lab1</title>
+    <meta charset='utf-8'>
+  </head>
+  <script>
+    function add(digit) {
+      if (digit < 10){
+        digit = "0" + digit
+      }
+      return digit;
+    }
+    function time() {
+      var span=document.getElementById("print");
+      setInterval(function(){
+        var date=new Date();
+        var h = add(date.getHours());
+        var m = add(date.getMinutes());
+        var s = add(date.getSeconds());
+        var ms = (date.getMilliseconds()/100).toFixed(0);
+        span.innerText=h+":"+m+":"+s+"."+ms;
+      }, 100);
+    }
+  </script>
+  <style>
+    body {
+      background-color: black;
+    }
+    button {
+      color: red;
+      background-color:black;
+      border:0;
+      font-size: 100px;
+      font-family:cursive;
+    }
+    #container {
+      text-align:center;
+      color:white;
+    }
+    #print {
+      font-size:150px;
+      font-family: fantasy;
+    }
+  </style>
+  <body>
+    <div id='container'>
+      <button onClick="time()">What time is it?</button>
+      <h1 id="print">
+      </h1>
+    </div>
+  </body>
+</html>
