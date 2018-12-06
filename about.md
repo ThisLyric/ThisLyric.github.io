@@ -2,7 +2,7 @@
 layout: page
 title: Yong Bum Kim
 permalink: /about/
-feature-img: "assets/img/three.png"
+feature-img: "assets/img/angelique.jpg"
 ---
 
 <style>
