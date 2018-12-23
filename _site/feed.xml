@@ -5,9 +5,29 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Dec 2018 15:21:08 -0500</pubDate>
-    <lastBuildDate>Thu, 06 Dec 2018 15:21:08 -0500</lastBuildDate>
+    <pubDate>Sat, 22 Dec 2018 23:26:00 -0500</pubDate>
+    <lastBuildDate>Sat, 22 Dec 2018 23:26:00 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Edge Masks</title>
+        <description>&lt;p&gt;Run adb shell command below for disabling heads up notification&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;adb shell settings put global heads_up_notifications_enabled 0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img width=&quot;800&quot; alt=&quot;screen shot 2018-11-10 at 12 07 54 am&quot; src=&quot;https://user-images.githubusercontent.com/43384877/50380775-9ccf0f80-0640-11e9-986a-81863dcc99f6.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 22 Dec 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/life/noroot/2018/12/22/noroot4.html</link>
+        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/12/22/noroot4.html</guid>
+        
+        <category>Android</category>
+        
+        
+        <category>Life/noRoot</category>
+        
+      </item>
     
       <item>
         <title>JavaScript (3) - Simple JavaScript Workaround</title>
