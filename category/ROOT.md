@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Life/Root
+title: Android Root
 permalink: '/Life/Root'
 ---
 

@@ -5,9 +5,24 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Dec 2018 23:26:00 -0500</pubDate>
-    <lastBuildDate>Sat, 22 Dec 2018 23:26:00 -0500</lastBuildDate>
+    <pubDate>Wed, 09 Jan 2019 15:18:59 -0500</pubDate>
+    <lastBuildDate>Wed, 09 Jan 2019 15:18:59 -0500</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Android Java (1)</title>
+        <description>&lt;p&gt;Hello World&lt;/p&gt;
+</description>
+        <pubDate>Wed, 09 Jan 2019 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/android%20java/2019/01/09/AndroidJava-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/android%20java/2019/01/09/AndroidJava-1.html</guid>
+        
+        <category>AndroidJava</category>
+        
+        
+        <category>Android Java</category>
+        
+      </item>
     
       <item>
         <title>Edge Masks</title>
@@ -19,13 +34,13 @@
 &lt;p&gt;&lt;img width=&quot;800&quot; alt=&quot;screen shot 2018-11-10 at 12 07 54 am&quot; src=&quot;https://user-images.githubusercontent.com/43384877/50380775-9ccf0f80-0640-11e9-986a-81863dcc99f6.jpg&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 22 Dec 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/noroot/2018/12/22/noroot4.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/12/22/noroot4.html</guid>
+        <link>http://localhost:4000/stock%20android/2018/12/22/noroot4.html</link>
+        <guid isPermaLink="true">http://localhost:4000/stock%20android/2018/12/22/noroot4.html</guid>
         
         <category>Android</category>
         
         
-        <category>Life/noRoot</category>
+        <category>Stock Android</category>
         
       </item>
     
@@ -222,13 +237,13 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Thu, 06 Dec 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/12/06/JS-3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/12/06/JS-3.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/12/06/JS-3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/12/06/JS-3.html</guid>
         
         <category>JavaScript</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -243,13 +258,13 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 03 Dec 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/12/03/CSS-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/12/03/CSS-1.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/12/03/CSS-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/12/03/CSS-1.html</guid>
         
         <category>CSS</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -325,13 +340,13 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/12/01/JS-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/12/01/JS-2.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/12/01/JS-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/12/01/JS-2.html</guid>
         
         <category>JavaScript</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -405,13 +420,13 @@
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 14 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/11/14/JS-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/11/14/JS-1.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/11/14/JS-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/11/14/JS-1.html</guid>
         
         <category>JavaScript</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -436,13 +451,13 @@ Directly extract it to Application folder or extract and move to the folder.
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/mac/2018/11/10/Spectacle.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/mac/2018/11/10/Spectacle.html</guid>
+        <link>http://localhost:4000/apple%20mac/2018/11/10/Spectacle.html</link>
+        <guid isPermaLink="true">http://localhost:4000/apple%20mac/2018/11/10/Spectacle.html</guid>
         
         <category>Application</category>
         
         
-        <category>Life/Mac</category>
+        <category>Apple Mac</category>
         
       </item>
     
@@ -738,13 +753,13 @@ Replace the codes:
 &lt;p&gt;출처: &lt;a href=&quot;https://devYurim.github.io&quot;&gt;devYurim Blog&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/githubblog/2018/11/10/GitHub-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/10/GitHub-2.html</guid>
+        <link>http://localhost:4000/github%20blog/2018/11/10/GitHub-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/github%20blog/2018/11/10/GitHub-2.html</guid>
         
         <category>GitHub Blog</category>
         
         
-        <category>Develop/GitHubBlog</category>
+        <category>GitHub Blog</category>
         
       </item>
     
@@ -972,13 +987,13 @@ IDENTIFIED BY 'password';
 &lt;p&gt;drop user is not needed when first time imported from phpmyadmin&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/11/09/php-2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/11/09/php-2.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/11/09/php-2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/11/09/php-2.html</guid>
         
         <category>PHP</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -1066,13 +1081,13 @@ IDENTIFIED BY 'password';
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/webprogramming/2018/11/09/php-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/webprogramming/2018/11/09/php-1.html</guid>
+        <link>http://localhost:4000/web%20programming/2018/11/09/php-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web%20programming/2018/11/09/php-1.html</guid>
         
         <category>PHP</category>
         
         
-        <category>Develop/WebProgramming</category>
+        <category>Web Programming</category>
         
       </item>
     
@@ -1099,15 +1114,20 @@ git push -u origin master
 (This occurs when the remote contains work that you do not have locally)&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push -u origin master --force
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When you edit something on another device or web interface&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git pull
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This will pull all the changes made to your local drive.&lt;/p&gt;
 </description>
         <pubDate>Fri, 09 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/develop/githubblog/2018/11/09/GitHub-1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/develop/githubblog/2018/11/09/GitHub-1.html</guid>
+        <link>http://localhost:4000/github%20blog/2018/11/09/GitHub-1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/github%20blog/2018/11/09/GitHub-1.html</guid>
         
         <category>GitHub Blog</category>
         
         
-        <category>Develop/GitHubBlog</category>
+        <category>GitHub Blog</category>
         
       </item>
     
@@ -1156,13 +1176,13 @@ git push -u origin master
 &lt;p&gt;출처: http://yk364.tistory.com/category [Developer]&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/noroot/2018/11/08/noroot3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/08/noroot3.html</guid>
+        <link>http://localhost:4000/stock%20android/2018/11/08/noroot3.html</link>
+        <guid isPermaLink="true">http://localhost:4000/stock%20android/2018/11/08/noroot3.html</guid>
         
         <category>Android</category>
         
         
-        <category>Life/noRoot</category>
+        <category>Stock Android</category>
         
       </item>
     
@@ -1218,13 +1238,13 @@ git push -u origin master
 &lt;center&gt;&lt;img src=&quot;/assets/img/EdgeGesture.png&quot; width=&quot;30%&quot; /&gt;&lt;/center&gt;
 </description>
         <pubDate>Thu, 08 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/noroot/2018/11/08/noroot2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/08/noroot2.html</guid>
+        <link>http://localhost:4000/stock%20android/2018/11/08/noroot2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/stock%20android/2018/11/08/noroot2.html</guid>
         
         <category>Android</category>
         
         
-        <category>Life/noRoot</category>
+        <category>Stock Android</category>
         
       </item>
     
@@ -1258,13 +1278,13 @@ git push -u origin master
 
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/noroot/2018/11/07/noroot1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/noroot/2018/11/07/noroot1.html</guid>
+        <link>http://localhost:4000/stock%20android/2018/11/07/noroot1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/stock%20android/2018/11/07/noroot1.html</guid>
         
         <category>Testing</category>
         
         
-        <category>Life/noRoot</category>
+        <category>Stock Android</category>
         
       </item>
     
@@ -1282,13 +1302,13 @@ git push -u origin master
 &lt;p&gt;Save and Restart&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/root/2018/11/07/root2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/root/2018/11/07/root2.html</guid>
+        <link>http://localhost:4000/android%20root/2018/11/07/root2.html</link>
+        <guid isPermaLink="true">http://localhost:4000/android%20root/2018/11/07/root2.html</guid>
         
         <category>Android</category>
         
         
-        <category>Life/Root</category>
+        <category>Android Root</category>
         
       </item>
     
@@ -1340,13 +1360,13 @@ git push -u origin master
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 07 Nov 2018 00:00:00 -0500</pubDate>
-        <link>http://localhost:4000/life/root/2018/11/07/root1.html</link>
-        <guid isPermaLink="true">http://localhost:4000/life/root/2018/11/07/root1.html</guid>
+        <link>http://localhost:4000/android%20root/2018/11/07/root1.html</link>
+        <guid isPermaLink="true">http://localhost:4000/android%20root/2018/11/07/root1.html</guid>
         
         <category>Android</category>
         
         
-        <category>Life/Root</category>
+        <category>Android Root</category>
         
       </item>
     

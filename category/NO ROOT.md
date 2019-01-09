@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Life/noRoot
+title: Stock Android
 permalink: '/Life/noRoot'
 ---
 

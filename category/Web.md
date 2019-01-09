@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Develop/WebProgramming
+title: Web Programming
 permalink: '/Develop/WebProgramming'
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Life/Mac
+title: Apple Mac
 permalink: '/Life/Mac'
 ---
 

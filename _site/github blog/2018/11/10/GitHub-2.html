@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<meta name="google-site-verification" content="mha51TrxKx53egbM7ir-dVSCdfVaZUACy7QzVFbMQ40" />
+	<meta name="naver-site-verification" content="c10e6e896289c98fe8dcda068918cdbd3f309211"/>
+
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="ThisLyric's IT Blog">
+	<meta property="og:description" content="Computer Science">
+	<meta property="og:image" content="https://user-images.githubusercontent.com/43384877/48309105-4b5f3b00-e540-11e8-9245-524fa94ca4f3.png">
+	<meta property="og:url" content="https://thislyric.github.io/">
+
+	<title>MarkDown Grammars | ThisLyric</title>
+	<meta name="description" content="  1. Header">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="/github%20blog/2018/11/10/GitHub-2.html">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="ThisLyric" href="/feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+	
+
+	<!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.8.3/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-111748939-1', 'auto');
+	ga('send', 'pageview');
+
+
+	</script>
+	
+
+
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-2204304584306848",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+
+  <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/assets/img/blogmark.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">ThisLyric</a>
+		</h1>
+		<nav class="site-nav">
+				<ul>
+
+					<!-- Search bar -->
+					
+					<li>
+					<form action="/search.html" method="get">
+						<input type="text" id="search-box" name="query" placeholder="Search" class="">
+						<button type="submit" class="">
+							<i class="fa fa-fw fa-search"></i>
+						</button>
+					</form>
+					</li>
+
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+							<li>
+								<a class="page-link" href="/tags.html">
+									tags
+								</a>
+							</li>
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+
+					
+				</ul>
+		</nav>
+	</div>
+
+	<div class="site-category">
+			<ul class='cat1'>
+				<li><a href="/about/">About</a></li>
+				<li><a>Development</a>
+					<ul>
+						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
+						<li><a href="/Develop/WebProgramming">Web</a></li>
+						<li><a href="/Develop/AndroidJava">Android Java</a></li>
+					</ul>
+				</li>
+				<li><a>Life</a>
+					<ul>
+						<li><a href="/Life/Root">AndroidRoot</a></li>
+						<li><a href="/Life/noRoot">AndroidNoRoot</a></li>
+						<li><a href="/Life/Mac">Mac</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+</header>
+
+  <body>
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">MarkDown Grammars</h1>
+    
+    <p class="meta">
+      November 10, 2018
+      
+    </p>
+  </header>
+  <section class="post-content"><p><br /></p>
+<blockquote>
+  <subtitle>1. Header</subtitle>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is H1        
+## This is H2
+### This is H3
+#### This is H4
+##### This is H5
+###### This is H6
+</code></pre></div></div>
+<p>Outputs:</p>
+
+<h1 id="this-is-h1">This is H1</h1>
+<h2 id="this-is-h2">This is H2</h2>
+<h3 id="this-is-h3">This is H3</h3>
+<h4 id="this-is-h4">This is H4</h4>
+<h5 id="this-is-h5">This is H5</h5>
+<h6 id="this-is-h6">This is H6</h6>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>2. Passage Indicator</subtitle>
+</blockquote>
+<p></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; First
+&gt; &gt; Second
+&gt; &gt; &gt; Third
+</code></pre></div></div>
+
+<blockquote>
+  <p>First</p>
+  <blockquote>
+    <p>Second</p>
+    <blockquote>
+      <p>Third</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>3. Lists</subtitle>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  1. First
+    * First
+  2. Second
+    - Second
+
+  - First
+    - Second
+      - Third
+</code></pre></div></div>
+<ol>
+  <li>First
+    <ul>
+      <li>First</li>
+    </ul>
+  </li>
+  <li>Second
+    <ul>
+      <li>Second</li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>First
+    <ul>
+      <li>Second
+        <ul>
+          <li>Third</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>4. Code</subtitle>
+</blockquote>
+
+<p><br />
+&lt; pre &gt; &lt; code &gt; <br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;pre&gt;&lt;code&gt;Github&lt;/code&gt;&lt;/pre&gt;
+</code></pre></div></div>
+<pre><code>Github</code></pre>
+<p><br /><br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  &lt;pre&gt;&lt;code&gt;
+  for i in range(1,2):
+    print(i)
+  &lt;/code&gt;&lt;/pre&gt;
+</code></pre></div></div>
+
+<pre><code>for i in range(1,2):
+  print(i)
+</code></pre>
+
+<p><br /><br />
+ps. If using a code highlighter (Applied from Blog Theme), any languages can be applied with <a href="http://rouge.jneen.net/">Rouge</a>  <br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/20412850/34469050-b6bb5f2e-ef59-11e7-8057-037fcbee07cf.png" width="30%" /></p>
+
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="k">for</span> <span class="n">i</span> <span class="n">in</span> <span class="nf">range</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span><span class="mi">2</span><span class="o">):</span>
+  <span class="n">print</span><span class="o">(</span><span class="n">i</span><span class="o">)</span></code></pre></figure>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 5. Horizontal Line </subtitle>
+</blockquote>
+
+<p><br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+************
+</code></pre></div></div>
+
+<hr />
+<hr />
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle> 6. Hyperlink </subtitle>
+</blockquote>
+
+<p><br /></p>
+<ul>
+  <li>inLine URL</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> [Google](https://www.google.com)
+ &lt;br&gt;
+ [Facebook](https://www.facebook.com)
+</code></pre></div></div>
+<p><a href="https://www.google.com">Google</a><br />
+ <a href="https://www.facebook.com">Facebook</a>
+<br /><br />
+Also can assign variables to add hyperlink</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Google][google]
+&lt;br&gt;
+[Facebook][facebook]
+
+[google]: https://www.google.com
+[facebook]: https://www.facebook.com
+</code></pre></div></div>
+<p><a href="https://www.google.com">Google</a>
+<br />
+<a href="https://www.facebook.com">Facebook</a></p>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>8. Text Format</subtitle>
+</blockquote>
+
+<p><br />
+Bold, Italic, CancelLine. No Underline Supported</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*single asterisks*
+_single underscores_
+**double asterisks**
+__double underscores__
+~~cancelline~~
+</code></pre></div></div>
+
+<p><em>single asterisks</em><br />
+<em>single underscores</em><br />
+<strong>double asterisks</strong><br />
+<strong>double underscores</strong><br />
+<del>cancelline</del><br /></p>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>9. Image</subtitle>
+</blockquote>
+
+<p><br />
+<b>Image Name</b> appears when image is not visible</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>![Image Name](url)
+![Image Name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" alt="Image name" /></p>
+
+<p><br /><br />
+  ps. Resizing</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;img src="url" width="size"&gt;
+&lt;img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%"&gt;
+</code></pre></div></div>
+<p><img src="https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png" width="60%" /></p>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>10. Insert Table</subtitle>
+</blockquote>
+
+<ul>
+  <li><a href="https://www.tablesgenerator.com/markdown_tables">Table Generator</a><br /></li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+</code></pre></div></div>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+    <tr>
+      <td>Content Cell</td>
+      <td>Content Cell</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>How to Arrange:<br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Header  | Second Header | Third Header
+:------------ | :-----------: | -----------:
+Left          | Center        | Right
+</code></pre></div></div>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">First Header</th>
+      <th style="text-align: center">Second Header</th>
+      <th style="text-align: right">Third Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Left</td>
+      <td style="text-align: center">Center</td>
+      <td style="text-align: right">Right</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br /></p>
+
+<blockquote>
+  <subtitle>11. Formula(Supported by Theme)</subtitle>
+</blockquote>
+
+<p><br /></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
+</code></pre></div></div>
+<p><script type="math/tex">f(x) = \int \frac{2x^2+4x+6}{x-2}</script></p>
+
+<p><br /><br /></p>
+<blockquote>
+  <subtitle>12. Changing Font</subtitle>
+  <p>Visit <b><a href="https://fonts.google.com">Google Fonts</a></b>
+Replace the codes:
+<br />
+<code>_config.yml</code>
+<br />
+<code>/_sass/base/_variables.scss</code></p>
+</blockquote>
+
+<p><br /><br /><br /><br /><br /></p>
+
+<p>출처: <a href="https://devYurim.github.io">devYurim Blog</a></p>
+</section>
+  
+<footer>
+  <div class="tags">
+    
+    <a class="tag" href="/tags#GitHub Blog">#GitHub Blog</a>
+    
+  </div>
+</footer>
+
+
+</article>
+<!-- Disqus -->
+<a href="https://thislyric.github.io/github%20blog/2018/11/10/GitHub-2.html#disqus_thread"></a>
+
+<div class="comments">
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://thislyric-1.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+<!--
+Add following to the page before </body>
+<script id="dsq-count-scr" src="//thislyric-1.disqus.com/count.js" async></script>
+-->
+
+</div>
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+  
+  <div id="previous-post" class="post-nav-post">
+      <p>Previous post</p>
+      <a href="/web%20programming/2018/11/09/php-2.html">
+        PHP (2) - Connect to Database
+      </a>
+  </div>
+  
+  
+  <div id="next-post" class="post-nav-post">
+      <p>Next post</p>
+      <a href="/apple%20mac/2018/11/10/Spectacle.html">
+        Split view like Windows or Linux - Spectacle
+      </a>
+  </div>
+  
+</div>
+
+
+
+    </div>
+    
+<script src="/assets/js/katex_init.js"></script>
+
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/rohanchandra/type-theme">Type Theme</a>
+</p>
+</footer>
+
+
+    <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+
+    <!-- Google Analytics Tracking code -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+  </body>
+</html>

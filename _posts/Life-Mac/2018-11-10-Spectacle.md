@@ -2,7 +2,7 @@
 layout: post
 title: "Split view like Windows or Linux - Spectacle"
 comments: true
-categories : [Life/Mac]
+categories : [Apple Mac]
 tags: [Application]
 ---
 

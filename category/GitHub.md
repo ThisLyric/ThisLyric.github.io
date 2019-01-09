@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Develop/GitHubBlog
+title: GitHub Blog
 permalink: '/Develop/GitHubBlog'
 ---
 

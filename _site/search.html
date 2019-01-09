@@ -117,11 +117,17 @@
 						
 					
 						
+					
+						
 							<li>
 								<a class="page-link" href="/tags.html">
 									tags
 								</a>
 							</li>
+						
+					
+						
+					
 						
 					
 						
@@ -153,6 +159,7 @@
 					<ul>
 						<li><a href="/Develop/GitHubBlog">GitHub Blog</a></li>
 						<li><a href="/Develop/WebProgramming">Web</a></li>
+						<li><a href="/Develop/AndroidJava">Android Java</a></li>
 					</ul>
 				</li>
 				<li><a>Life</a>
@@ -185,168 +192,179 @@
 <script>
   window.store = {
     
-      "life-noroot-2018-12-22-noroot4-html": {
+      "android-20java-2019-01-09-androidjava-1-html": {
+        "title": "Android Java (1)",
+        "tags": "AndroidJava",
+        "date": "January 9, 2019",
+        "author": "",
+        "category": "",
+        "content": "Hello World",
+        "url": "//android%20java/2019/01/09/AndroidJava-1.html"
+      }
+      ,
+    
+      "stock-20android-2018-12-22-noroot4-html": {
         "title": "Edge Masks",
         "tags": "Android",
         "date": "December 22, 2018",
         "author": "",
         "category": "",
         "content": "Run adb shell command below for disabling heads up notificationadb shell settings put global heads_up_notifications_enabled 0",
-        "url": "//life/noroot/2018/12/22/noroot4.html"
+        "url": "//stock%20android/2018/12/22/noroot4.html"
       }
       ,
     
-      "develop-webprogramming-2018-12-06-js-3-html": {
+      "web-20programming-2018-12-06-js-3-html": {
         "title": "JavaScript (3) - Simple JavaScript Workaround",
         "tags": "JavaScript",
         "date": "December 6, 2018",
         "author": "",
         "category": "",
         "content": "  Live Clock appears when button clicked&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;title&gt;lab1&lt;/title&gt;    &lt;meta charset='utf-8'&gt;  &lt;/head&gt;  &lt;script&gt;    function add(digit) {      if (digit &lt; 10){        digit = \"0\" + digit      }      return digit;    }    function time() {      var span=document.getElementById(\"print\");      setInterval(function(){        var date=new Date();        var h = add(date.getHours());        var m = add(date.getMinutes());        var s = add(date.getSeconds());        var ms = (date.getMilliseconds()/100).toFixed(0);        span.innerText=h+\":\"+m+\":\"+s+\".\"+ms;      }, 100);    }  &lt;/script&gt;  &lt;style&gt;    body {      background-color: black;    }    button {      color: red;      background-color:black;      border:0;      font-size: 100px;      font-family:cursive;    }    #container {      text-align:center;      color:white;    }    #print {      font-size:150px;      font-family: fantasy;    }  &lt;/style&gt;  &lt;body&gt;    &lt;div id='container'&gt;      &lt;button onClick=\"time()\"&gt;What time is it?&lt;/button&gt;      &lt;h1 id=\"print\"&gt;      &lt;/h1&gt;    &lt;/div&gt;  &lt;/body&gt;&lt;/html&gt;  Image will move inside the box depends on the user input of speec&lt;!DOCTYPE html&gt;&lt;/html&gt;  &lt;head&gt;    &lt;title&gt;Bouncing Logo&lt;/title&gt;  &lt;/head&gt;  &lt;style&gt;    div.bound {      display:block;      border-style:solid;      width:502px;      height:402px;      border-width:1px;    }    div.move {      position:absolute;    }    input.main{      padding: 10px 24px;      border-radius: 12px;      width: 100px;      color: black;      background-color: #bddfeb;      font-weight: bold;      text-align: center;      border-color: #bddfeb;      border-collapse:       -webkit-transition-duration: 0.4s; /* Safari */      transition-duration: 0.4s;      text-align:center;    }    #button{      padding-left: 402px;    }  &lt;/style&gt;  &lt;script&gt;    var x=0;    var y=0;    var max_x=400;    var max_y=300;    var xoffset=10;    var yoffset=10;    function go(){      var speed = prompt(\"1:Faster; 2:Normal; 3:Slower; 4:INSANE MODE\");      if (speed==1){        speed = 50;      }      else if(speed==2){        speed = 100;      }      else if(speed==3){        speed=200;      }      else if(speed==4){        speed=1;      }      else{        alert(\"Pick a number between 1 and 3. Speed set to Default\");        speed=200;      }      moveCSLogo(speed);    }    function moveCSLogo(speed){      x+=xoffset;      y+=yoffset;      document.getElementById(\"msucs\").style.top = y+'px';      document.getElementById(\"msucs\").style.left = x+'px';      if ((x+xoffset &gt; max_x) || (x+xoffset &lt; 0))        xoffset *=-1;      if ((y+yoffset &gt; max_y) || (y+yoffset &lt; 0))        yoffset *=-1;      //window.setTimeout('moveCSLogo()', option);      window.setTimeout('moveCSLogo('+speed+')',speed);    }  &lt;/script&gt;  &lt;body onload=\"go()\"&gt;    &lt;div class=\"bound\"&gt;      &lt;div id=\"msucs\" class=\"move\"&gt;        &lt;img src=\"mario.png\" width=\"102px\" height=\"102px\" alt=\"need image here\" /&gt;      &lt;/div&gt;    &lt;/div&gt;    &lt;p&gt;&lt;/p&gt;    &lt;div id=\"button\"&gt;      &lt;form action=\"lab2.html\" method=\"post\"&gt;      \t&lt;input type=\"submit\" value=\"RELOAD!\" class =\"main\"&gt;      &lt;/form&gt;    &lt;/div&gt;  &lt;/body&gt;&lt;/html&gt;  Given sentence will move around and change its color when user click on it&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;title&gt;Lab3&lt;/title&gt;  &lt;/head&gt;  &lt;script&gt;    function getColor() {      var letters ='0123456789abcdef';      var color='#';      for (var i=0;i&lt;6;i++){        color = color + letters[Math.round(Math.random()*16)];      }      return color;    }    function getRand() {      var number = String(Math.round(Math.random()*500));      number = number + '';      return number;    }    function change() {      var span = document.getElementById('changeColor');      span.style.color=getColor();      span.style.padding = getRand()+'px';    }  &lt;/script&gt;  &lt;body&gt;    &lt;h1 onClick=\"change()\" id=\"changeColor\"&gt;Welcome to CSIT: Click me to change color.&lt;/h1&gt;  &lt;/body&gt;&lt;/html&gt;",
-        "url": "//develop/webprogramming/2018/12/06/JS-3.html"
+        "url": "//web%20programming/2018/12/06/JS-3.html"
       }
       ,
     
-      "develop-webprogramming-2018-12-03-css-1-html": {
+      "web-20programming-2018-12-03-css-1-html": {
         "title": "CSS (1) - Reference",
         "tags": "CSS",
         "date": "December 3, 2018",
         "author": "",
         "category": "",
         "content": "Animation Generation Tool (Webkit + Keyframes)  Click to visit: Animista  ",
-        "url": "//develop/webprogramming/2018/12/03/CSS-1.html"
+        "url": "//web%20programming/2018/12/03/CSS-1.html"
       }
       ,
     
-      "develop-webprogramming-2018-12-01-js-2-html": {
+      "web-20programming-2018-12-01-js-2-html": {
         "title": "JavaScript (2) - Popup Input when page loads",
         "tags": "JavaScript",
         "date": "December 1, 2018",
         "author": "",
         "category": "",
         "content": "&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;head&gt;    &lt;title&gt;&lt;/title&gt;    &lt;meta charset='utf-8'&gt;  &lt;/head&gt;  &lt;script type=\"text/JavaScript\"&gt;    function read() {      while(true){        var num = parseInt(prompt(\"Enter a number: \"));        if(num&gt;=5 &amp;&amp; num&lt;=20){          break;        }        else {          alert(\"input not in range. Try again: \");        }      }      return num;    }    function star(){      var num1 = read();      var num2 = read();      var num3 = read();      for(var i=0; i&lt;num1; i++){        document.getElementById(\"div1\").innerHTML += \"*\";      }      for(var i=0; i&lt;num2; i++){        document.getElementById(\"div2\").innerHTML += \"*\";      }      for(var i=0; i&lt;num3; i++){        document.getElementById(\"div3\").innerHTML += \"*\";      }    }  &lt;/script&gt;  &lt;style type=\"text/css\"&gt;    body {      background-color: black;    }    #div1{      color:red;      font-size: 500%;    }    #div2{      color:yellow;      font-size: 500%;    }    #div3{      color:blue;      font-size: 500%;    }  &lt;/style&gt;  &lt;body onload=\"star()\"&gt;    &lt;div id=\"div1\"&gt;&lt;/div&gt;    &lt;div id=\"div2\"&gt;&lt;/div&gt;    &lt;div id=\"div3\"&gt;&lt;/div&gt;  &lt;/body&gt;&lt;/html&gt;Two ways to prompt to users  Use onload=”function()” inside body brackets  include window.load=function(); in the script section.          script needs to be included in the body brackets      &lt;body&gt;&lt;script&gt;window.load=function();&lt;/script&gt;&lt;/body&gt;      ",
-        "url": "//develop/webprogramming/2018/12/01/JS-2.html"
+        "url": "//web%20programming/2018/12/01/JS-2.html"
       }
       ,
     
-      "develop-webprogramming-2018-11-14-js-1-html": {
+      "web-20programming-2018-11-14-js-1-html": {
         "title": "JavaScript (1) - popUpWindow",
         "tags": "JavaScript",
         "date": "November 14, 2018",
         "author": "",
         "category": "",
         "content": "  Open Pop Up Window&lt;script type=\"text/javascript\"&gt;  function popup(url) {    popUpWindow=windows.open(      url,'popUpWindow','height=300,width=400,scrollbar=yes,toolbar=yes,menubar=no,status=yes'    )  }&lt;/script&gt;&lt;body&gt;&lt;button type=\"button\" value=\"open\"&gt;  &lt;a href=\"JavaSCript:popup('url.php');\"&gt;Click for Popup!&lt;/a&gt;&lt;/button&gt;&lt;/body&gt;  Click for Popup!  Close Pop Up Window&lt;script&gt;  function exit(){    window.close();  }&lt;/script&gt;&lt;body&gt;  &lt;button type=\"button\" value=\"close!\"&gt;    &lt;a href=\"JavaSCript:exit();\"&gt;Click to Close  &lt;/a&gt;&lt;/button&gt;&lt;/body&gt;      Click to Close  ",
-        "url": "//develop/webprogramming/2018/11/14/JS-1.html"
+        "url": "//web%20programming/2018/11/14/JS-1.html"
       }
       ,
     
-      "life-mac-2018-11-10-spectacle-html": {
+      "apple-20mac-2018-11-10-spectacle-html": {
         "title": "Split view like Windows or Linux - Spectacle",
         "tags": "Application",
         "date": "November 10, 2018",
         "author": "",
         "category": "",
         "content": "Windows and Linux have split view shortcut commands available.WHY NOT ON MAC?Click Here to Install SpectacleOnce you go through simple downloading an app.Directly extract it to Application folder or extract and move to the folder.  Customizable Commands",
-        "url": "//life/mac/2018/11/10/Spectacle.html"
+        "url": "//apple%20mac/2018/11/10/Spectacle.html"
       }
       ,
     
-      "develop-githubblog-2018-11-10-github-2-html": {
+      "github-20blog-2018-11-10-github-2-html": {
         "title": "MarkDown Grammars",
         "tags": "GitHub Blog",
         "date": "November 10, 2018",
         "author": "",
         "category": "",
         "content": "  1. Header# This is H1        ## This is H2### This is H3#### This is H4##### This is H5###### This is H6Outputs:This is H1This is H2This is H3This is H4This is H5This is H6  2. Passage Indicator&gt; First&gt; &gt; Second&gt; &gt; &gt; Third  First      Second          Third        3. Lists  1. First    * First  2. Second    - Second  - First    - Second      - Third  First          First        Second          Second        First          Second                  Third                      4. Code&lt; pre &gt; &lt; code &gt; &lt;pre&gt;&lt;code&gt;Github&lt;/code&gt;&lt;/pre&gt;Github  &lt;pre&gt;&lt;code&gt;  for i in range(1,2):    print(i)  &lt;/code&gt;&lt;/pre&gt;for i in range(1,2):  print(i)ps. If using a code highlighter (Applied from Blog Theme), any languages can be applied with Rouge  for i in range(1,2):  print(i)   5. Horizontal Line ---************   6. Hyperlink   inLine URL [Google](https://www.google.com) &lt;br&gt; [Facebook](https://www.facebook.com)Google FacebookAlso can assign variables to add hyperlink[Google][google]&lt;br&gt;[Facebook][facebook][google]: https://www.google.com[facebook]: https://www.facebook.comGoogleFacebook  8. Text FormatBold, Italic, CancelLine. No Underline Supported*single asterisks*_single underscores_**double asterisks**__double underscores__~~cancelline~~single asteriskssingle underscoresdouble asterisksdouble underscorescancelline  9. ImageImage Name appears when image is not visible![Image Name](url)![Image Name](https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png)  ps. Resizing&lt;img src=\"url\" width=\"size\"&gt;&lt;img src=\"https://user-images.githubusercontent.com/20412850/34468412-ba059536-ef4b-11e7-90d4-3313e9fed8f9.png\" width=\"60%\"&gt;  10. Insert Table  Table GeneratorFirst Header  | Second Header------------- | -------------Content Cell  | Content CellContent Cell  | Content Cell            First Header      Second Header                  Content Cell      Content Cell              Content Cell      Content Cell      How to Arrange:First Header  | Second Header | Third Header:------------ | :-----------: | -----------:Left          | Center        | Right            First Header      Second Header      Third Header                  Left      Center      Right        11. Formula(Supported by Theme)$$ f(x) = \\int \\frac{2x^2+4x+6}{x-2} $$  12. Changing Font  Visit Google FontsReplace the codes:_config.yml/_sass/base/_variables.scss출처: devYurim Blog",
-        "url": "//develop/githubblog/2018/11/10/GitHub-2.html"
+        "url": "//github%20blog/2018/11/10/GitHub-2.html"
       }
       ,
     
-      "develop-webprogramming-2018-11-09-php-2-html": {
+      "web-20programming-2018-11-09-php-2-html": {
         "title": "PHP (2) - Connect to Database",
         "tags": "PHP",
         "date": "November 9, 2018",
         "author": "",
         "category": "",
         "content": "Users will determine which categories they want to see&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    h1 {      font-family: fantasy;    }    label {      font-family: monospace;    }    form {      width: 450px;      margin: auto;      padding-bottom: 20px;      border: 2px solid red;      text-align: center;    }    input {      width: 25%;    }    option {      text-align: center;    }  &lt;/style&gt;  &lt;head&gt;    &lt;title&gt;Main Gate of Database&lt;/title&gt;    &lt;meta charset=\"utf-8\"&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;form action = \"database.php\" method=\"post\"&gt;      &lt;h1&gt;Querying a MySQL database.&lt;/h1&gt;      &lt;label&gt;Select a field to display:        &lt;select name = \"view\" required&gt;          &lt;option value=\"\" disabled selected&gt;--Select your Option--&lt;/option&gt;          &lt;option value=\"all\"&gt;*&lt;/option&gt;          &lt;option value=\"id\"&gt;ID&lt;/option&gt;          &lt;option value=\"title\"&gt;Title&lt;/option&gt;          &lt;option value=\"category\"&gt;Category&lt;/option&gt;          &lt;option value=\"isbn\"&gt;ISBN&lt;/option&gt;        &lt;/select&gt;      &lt;/label&gt;      &lt;br&gt;&lt;br&gt;      &lt;input type=\"submit\" name=\"submit\" value=\"Send Query\"&gt;    &lt;/form&gt;  &lt;/body&gt;&lt;/html&gt;When category is selected from index.html filephp will set up PDO to database and brings up contents from sql&lt;!DOCTYPE html&gt;&lt;html&gt;  &lt;style&gt;    div.top {      position: absolute;      align-items: center;      left: 30%;    }    div.bot {      position: relative;      top: 300px;    }    table {      margin: auto;      /*position:relative;      top:100px;*/      border: 2px solid red;      color:yellow;      border-color:blue;      font-family: fantasy;      text-align: center;    }    body {      background-color: black;      color: white;      position: relative;    }  &lt;/style&gt;  &lt;?php    $dsn=\"mysql:host=localhost;dbname=books\";    $username=\"iw3htp\";    $password=\"password\";    $id=$_POST['view'];    $cnt=0;    try {      $conn=new PDO($dsn,$username,$password);      $conn-&gt;setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);      $getAll=$conn-&gt;prepare(\"SELECT * FROM books\");      $getAll-&gt;execute();    }catch(PDOException $e) {      echo \"Error: \".$e-&gt;getMessage();    }    $connect=null;  ?&gt;  &lt;head&gt;    &lt;meta charset=\"utf-8\"&gt;    &lt;title&gt;Selected contents&lt;/title&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;?php      $getAll=$conn-&gt;prepare(\"SELECT * FROM books ORDER BY id ASC\");      $getAll-&gt;execute();     ?&gt;     &lt;div class=\"top\"&gt;    &lt;table border = 1&gt;      &lt;?php        switch($id) {          case 'all':            for ($i=0; $view=$getAll-&gt;fetch(); $i++) {              $cnt=$i+1;?&gt;       &lt;tr&gt;         &lt;td&gt;&lt;?php echo $view['id']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['title']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['category']?&gt;&lt;/td&gt;         &lt;td&gt;&lt;?php echo $view['isbn']?&gt;&lt;/td&gt;       &lt;/tr&gt;      &lt;?php }        break;        case 'id':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['id']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'title':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['title']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'category':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['category']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;        case 'isbn':        for ($i=0; $view=$getAll-&gt;fetch(); $i++) {          $cnt=$i+1;?&gt;        &lt;tr&gt;          &lt;td&gt;&lt;?php echo $view['isbn']?&gt;&lt;/td&gt;        &lt;/tr&gt;      &lt;?php }        break;      }//end of switch      ?&gt;&lt;/div&gt;      &lt;div class=\"bot\"&gt;      &lt;?php        echo \"Your search yielded \".$cnt.\" results.\";        echo \"&lt;p&gt;&lt;/p&gt;\";        echo \"Thank you for using our database.\"; ?&gt;    &lt;/div&gt;      &lt;/table&gt;  &lt;/body&gt;&lt;/html&gt;Database code-- phpMyAdmin SQL Dump-- version 4.8.3-- https://www.phpmyadmin.net/---- Host: 127.0.0.1-- Generation Time: Oct 29, 2018 at 10:59 PM-- Server version: 10.1.36-MariaDB-- PHP Version: 7.2.11SET SQL_MODE = \"NO_AUTO_VALUE_ON_ZERO\";SET AUTOCOMMIT=0;START TRANSACTION;SET time_zone=\"+00:00\";DROP DATABASE IF EXISTS books;CREATE DATABASE books;USE books;CREATE TABLE `books` (  `id` int(11) NOT NULL,  `title` text NOT NULL,  `category` text NOT NULL,  `isbn` int(11) NOT NULL) ENGINE=InnoDB DEFAULT CHARSET=latin1;---- Dumping data for table `books`--INSERT INTO `books` (`id`,`title`,`category`,`isbn`) VALUES(1, 'Visual Basic 2010 How to Program', 'Programming', 132152134),(2, 'Visual C# 2010 How to Program', 'Programming', 132151421),(3, 'Java How to Program', 'Programming', 132575663),(4, 'C++ How to Program', 'Programming', 132662361),(5, 'C How to Program', 'Programming', 136123562),(6, 'Internet &amp; World Wide Web How to Program', 'Programming', 132151006),(7, 'Yong Bum Kim Operating Systems', 'Operating Systems', 131828274);COMMIT;drop user iw3htp@localhost;flush privileges;CREATE USERiw3htp@localhostIDENTIFIED BY 'password';GRANT ALLON books.*TO iw3htp@localhostIDENTIFIED BY 'password';drop user is not needed when first time imported from phpmyadmin",
-        "url": "//develop/webprogramming/2018/11/09/php-2.html"
+        "url": "//web%20programming/2018/11/09/php-2.html"
       }
       ,
     
-      "develop-webprogramming-2018-11-09-php-1-html": {
+      "web-20programming-2018-11-09-php-1-html": {
         "title": "PHP (1)",
         "tags": "PHP",
         "date": "November 9, 2018",
         "author": "",
         "category": "",
         "content": "Main page that requires a form to access php file when posted&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;style&gt;h1{font-family:cursive;}&lt;/style&gt;  &lt;head&gt;    &lt;meta charset = \"utf-8\"&gt;    &lt;title&gt;Welcome to PHP&lt;/title&gt;  &lt;/head&gt;  &lt;body&gt;    &lt;form method=\"post\" action=\"lab1.php\"&gt;    &lt;h1&gt;Please complete this form to submit your feedback&lt;/h1&gt;    &lt;p&gt;    &lt;table border = '0'&gt;      &lt;tbody&gt;        &lt;tr&gt;          &lt;td&gt;Name: &lt;select name=\"prefix\" required&gt;            &lt;option value = \"Dr.\"&gt;Dr.&lt;/option&gt;            &lt;option value = \"Mr.\"&gt;Mr.&lt;/option&gt;            &lt;option value = \"Mrs.\"&gt;Mrs.&lt;/option&gt;            &lt;option value = \"Ms.\"&gt;Ms.&lt;/option&gt;          &lt;/select&gt;          &lt;/td&gt;          &lt;td&gt;            &lt;input name = \"name\" type=\"text\" size=\"25\" maxlength = \"30\" autofocus required&gt;          &lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;          &lt;td&gt;Email Address: &lt;/td&gt;          &lt;td&gt;&lt;input name=\"email\" type=\"text\" size=\"25\" maxlength=\"30\" autofocus required&gt;&lt;/td&gt;        &lt;/tr&gt;        &lt;tr&gt;          &lt;td&gt;Phone Number: &lt;/td&gt;          &lt;td&gt;&lt;input name=\"phone\" type=\"text\" size=\"25\" maxlength=\"30\" autofocus required&gt;&lt;/td&gt;        &lt;/tr&gt;    &lt;/table&gt;  &lt;/p&gt;    &lt;p&gt;      &lt;strong&gt;Rating...&lt;/strong&gt;        &lt;input name=\"rate\" type=\"radio\" value=\"excellent\"&gt;        excellent        &lt;input name=\"rate\" type=\"radio\" value=\"okay\"&gt;        okay        &lt;input name=\"rate\" type=\"radio\" value=\"boring\"&gt;        boring    &lt;/p&gt;      &lt;p&gt;&lt;label&gt;Comments:        &lt;textarea name=\"comment\" rows=\"5\" cols=\"30\"&gt;        &lt;/textarea&gt;      &lt;/label&gt;&lt;/p&gt;      &lt;input type=\"Submit\" name=\"submit\" value=\"Send My Feedback\"&gt;    &lt;/form&gt;  &lt;/body&gt;&lt;/html&gt;By using $_POST[], it will read user input from index.html file.&lt;?php  if(isset($_POST['submit'])){    $prefix = $_POST['prefix'];    $name = $_POST['name'];    $email = $_POST['email'];    $phone = $_POST['phone'];    $rate = $_POST['rate'];    $comment = $_POST['comment'];    echo \"Thank you, &lt;b&gt;$prefix&lt;/b&gt; &lt;b&gt;$name&lt;/b&gt;, for your comments.\";    echo \"&lt;p&gt;\";    echo \"Your email address is &lt;b&gt;$email&lt;/b&gt; and your phone number is &lt;b&gt;$phone&lt;/b&gt;\";    echo \"&lt;p&gt;\";    echo \"You stated that you found this example to be '&lt;b&gt;$rate&lt;/b&gt;' and added: &lt;b&gt;$comment&lt;/b&gt;\";  }?&gt;",
-        "url": "//develop/webprogramming/2018/11/09/php-1.html"
+        "url": "//web%20programming/2018/11/09/php-1.html"
       }
       ,
     
-      "develop-githubblog-2018-11-09-github-1-html": {
+      "github-20blog-2018-11-09-github-1-html": {
         "title": "From local to GitHub Web",
         "tags": "GitHub Blog",
         "date": "November 9, 2018",
         "author": "",
         "category": "",
-        "content": "When link to a new local folderbundle installbundle updateTo follow up with your build in a real-timeYour site can be accessed from local:4000 as defaultjekyll serve --incrementalTo post/overwrite to the GitHub Servergit add .git commit -m \"comment\"git push -u origin masterIf push command is not working, try to force push(This occurs when the remote contains work that you do not have locally)git push -u origin master --force",
-        "url": "//develop/githubblog/2018/11/09/GitHub-1.html"
+        "content": "When link to a new local folderbundle installbundle updateTo follow up with your build in a real-timeYour site can be accessed from local:4000 as defaultjekyll serve --incrementalTo post/overwrite to the GitHub Servergit add .git commit -m \"comment\"git push -u origin masterIf push command is not working, try to force push(This occurs when the remote contains work that you do not have locally)git push -u origin master --forceWhen you edit something on another device or web interfacegit pullThis will pull all the changes made to your local drive.",
+        "url": "//github%20blog/2018/11/09/GitHub-1.html"
       }
       ,
     
-      "life-noroot-2018-11-08-noroot3-html": {
+      "stock-20android-2018-11-08-noroot3-html": {
         "title": "[Pixel 2 XL] Downgrade from Android Pie to Oreo 파이에서 오레오로 다운그레이드",
         "tags": "Android",
         "date": "November 8, 2018",
         "author": "",
         "category": "",
         "content": "기본적으로 adb, fastboot는 컴퓨터에twrp.zip, magisk.zip은 핸드폰 안에 들어가 있는 전제밑의 링크 들어가서 올리고싶은 버전으로 올리기.OTA file 다운로드TWRP 같은 버전 img파일 받아서 platform-tools 폴더 안에 넣어놓기(편하게 OTA 파일은 update.zipTWRP 이미지 파일은 twrp.img로바꾸고 실행)(MAC은 커맨드 앞에 항상 ./)adb reboot recovery패턴 걸려있으면 풀어주고Advanced -&gt; ADB SideloadSwipe to Start Sideloadadb sideload update.zipSideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.다시 한번 adb reboot recovery로 부팅하면 기본 리커버리가 실행되므로adb reboot bootloaderfastboot boot twrp.imgtwrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zipflash해주면 다시 재루팅 완료출처: http://yk364.tistory.com/category [Developer]",
-        "url": "//life/noroot/2018/11/08/noroot3.html"
+        "url": "//stock%20android/2018/11/08/noroot3.html"
       }
       ,
     
-      "life-noroot-2018-11-08-noroot2-html": {
+      "stock-20android-2018-11-08-noroot2-html": {
         "title": "Immersive Mode [without ROOT] with Edge Gesture",
         "tags": "Android",
         "date": "November 8, 2018",
         "author": "",
         "category": "",
         "content": "Instruction below still can access NavBar by swiping up from the bottom.(Or from certain apps, when swipe down notification bar)      Enable USB debugging on your phone settings (개발자옵션 활성화 후, 두번째 세션에 있는 USB Debugging 활성화)        Download and extract Google-platform-tools.zip (ADB) to your computer  Click here  Launch Command Prompt(압축해제만 해놓은 상태에서 platform-tools 폴더가 있는 곳으로 directory 설정해주고 명령 입력)  Execute any of the following commands:** Hide navigation bar and status bar **adb shell settings put global policy_control immersive.full=apps,-com.google.android.googlequicksearchbox** Hide only navigation bar **adb shell settings put global policy_control immersive.navigation=apps,-com.google.android.googlequicksearchbox** Reverse all **adb shell settings put global policy_control immersive.full=To completely get rid of Navigation Bar (Squeeze works)IMMERSIVE MODE FINAL** PIXEL 2 **adb shell wm overscan 0,0,0,-150** PIXEL 2  XL ** adb shell wm overscan 0,0,0,-170Edge Gesture (Recommended Gesture App)",
-        "url": "//life/noroot/2018/11/08/noroot2.html"
+        "url": "//stock%20android/2018/11/08/noroot2.html"
       }
       ,
     
-      "life-noroot-2018-11-07-noroot1-html": {
+      "stock-20android-2018-11-07-noroot1-html": {
         "title": "First Testing Post",
         "tags": "Testing",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "Just testing out code Entrydef print_hi(name):  print(\"hello\", name)  print(\"Welcome to Python\")​&lt;html&gt;  &lt;body&gt;  &lt;h1&gt;Just Testing&lt;/h1&gt;  &lt;/body&gt;&lt;/html&gt;Check out the Jekyll docs for more info on how to get the most out of Jekyll. File all bugs/feature requests at Jekyll’s GitHub repo. If you have questions, you can ask them on Jekyll Talk.",
-        "url": "//life/noroot/2018/11/07/noroot1.html"
+        "url": "//stock%20android/2018/11/07/noroot1.html"
       }
       ,
     
-      "life-root-2018-11-07-root2-html": {
+      "android-20root-2018-11-07-root2-html": {
         "title": "[ROOT] Disable Navigation Bar",
         "tags": "Android",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "Download any type of explorer which can access build.prop file.(The easiest way would be downloading Build.prop Editor app)Grant Root Access (Press Edit)qemu.hw.mainkeys=1Save and Restart",
-        "url": "//life/root/2018/11/07/root2.html"
+        "url": "//android%20root/2018/11/07/root2.html"
       }
       ,
     
-      "life-root-2018-11-07-root1-html": {
+      "android-20root-2018-11-07-root1-html": {
         "title": "[ROOT] Security Patch Sideload 보안 패치 올리는 법",
         "tags": "Android",
         "date": "November 7, 2018",
         "author": "",
         "category": "",
         "content": "기본적으로 adb, fastboot는 컴퓨터에twrp.zip, magisk.zip은 핸드폰 안에 들어가 있는 전제밑의 링크 들어가서 올리고싶은 버전으로 올리기.OTA file 다운로드TWRP 같은 버전 img파일 받아서 platform-tools 폴더 안에 넣어놓기(편하게 OTA 파일은 update.zipTWRP 이미지 파일은 twrp.img로바꾸고 실행)(MAC은 커맨드 앞에 항상 ./)adb reboot recovery패턴 걸려있으면 풀어주고Advanced -&gt; ADB SideloadSwipe to Start Sideloadadb sideload update.zipSideload 완료 후에 폰 부팅해 보면 루팅이 풀린 것을 볼 수 있다.다시 한번adb reboot recovery부팅하면 기본 리커버리가 실행되므로adb reboot bootloaderfastboot boot twrp.imgtwrp 들어간 후에 예전부터 들어가 있던 magisk.zip과 twrp.zipflash해주면 다시 재루팅 완료",
-        "url": "//life/root/2018/11/07/root1.html"
+        "url": "//android%20root/2018/11/07/root1.html"
       }
       
     
