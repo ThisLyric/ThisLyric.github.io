@@ -68,6 +68,8 @@ feature-img: "assets/img/angelique.jpg"
 
 <p class="tab">2016.8 ~ Present</p>
 <p class="tab2">Montclair State University IT Service Desk</p>
+<p class="tab">2019.6 ~ 2019.9</p>
+<p class="tab2">TRANZACT IT System Intern</p>
 <!--
 <div id="jb-sidebar">
 	<p>2016.9 ~ Present</p>
